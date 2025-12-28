@@ -1,0 +1,3071 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+  <Document>
+    <name>ZA V. TN MAP</name>
+    <description><![CDATA[This map organizes locations referenced in publicly available case materials, reporting, and trial testimony related to the criminal case against Zachary Adams.<br/><br/>
+  This file is an index of places mentioned in sources. Labels describe how a location is referenced (for example “reported found” or “described in testimony”). It does not determine what occurred at any location.<br/><br/>
+  Coordinate precision varies. Items marked “approx.” are approximate placements based on descriptions in sources rather than surveyed points.<br/><br/>
+  Some entries below now include line-referenced citations to a 2022 appellate opinion (State v. Zachary Rye Adams). Where present, citations are preserved as <b>[cite: ...]</b> line references from that document extract.<br/><br/>
+  Additional reference: <a href="https://innocentbrothers.com/">innocentbrothers.com</a> (accessed 2025-12-15).<br/><br/>
+  https://innocentbrothers.com/<br/><br/>
+  Last updated: 2025-12-15
+  ]]></description>
+
+    <!-- Initial view centered on Tennessee case area -->
+    <LookAt>
+      <longitude>-88.15</longitude>
+      <latitude>35.75</latitude>
+      <altitude>0</altitude>
+      <heading>0</heading>
+      <tilt>0</tilt>
+      <range>50000</range>
+      <altitudeMode>relativeToGround</altitudeMode>
+    </LookAt>
+
+    <!-- Schema Definition -->
+    <Schema name="__managed_schema" id="__managed_schema">
+      <SimpleField type="string" name="COL593B4A5607B112E8">
+        <displayName>category</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="COL593B4A56078FF545">
+        <displayName>event_date</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="COL593B4A56077F3D27">
+        <displayName>cite_lines</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="COL593B4A56070D8F2D">
+        <displayName>source_title</displayName>
+      </SimpleField>
+      <SimpleField type="string" name="COL593B4A56072A2CC3">
+        <displayName>precision</displayName>
+      </SimpleField>
+    </Schema>
+
+    <!--
+      Label toggles (by group)
+
+      KML styles do not “cascade” from Folder -> Placemark, so Google Earth can’t provide a true
+      one-click “labels off for this folder” switch purely from KML.
+
+      What this file *does* provide is a parallel set of styles ending in “-nolabel”.
+      To hide labels for a group, bulk-swap styleUrl values, e.g. #pt-residence -> #pt-residence-nolabel.
+    -->
+
+    <!-- Point styles -->
+    <Style id="pt-primary">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=ef5350&amp;id=2006&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0.9</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-primary-nolabel">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=ef5350&amp;id=2006&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-evidence">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=ef5350&amp;id=2006&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0.9</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-evidence-nolabel">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=ef5350&amp;id=2006&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-person">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle><scale>0.9</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-person-nolabel">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/blu-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-residence">
+      <IconStyle>
+        <color>ffffffff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=303f9f&amp;id=2176&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0.75</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-residence-nolabel">
+      <IconStyle>
+        <color>ffffffff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=303f9f&amp;id=2176&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-cell">
+      <IconStyle>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=fbc235&amp;id=2051&amp;scale=4</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle><scale>0.5</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-cell-nolabel">
+      <IconStyle>
+        <scale>0.6</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=fbc235&amp;id=2051&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-other">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle><scale>0.9</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pt-other-nolabel">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/paddle/wht-circle.png</href>
+        </Icon>
+      </IconStyle>
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <!-- Polygon styles -->
+    <Style id="poly-blue">
+      <LineStyle><color>ffd18802</color><width>2</width></LineStyle>
+      <PolyStyle><color>4dd18802</color><fill>1</fill><outline>1</outline></PolyStyle>
+    </Style>
+
+    <Style id="poly-pink">
+      <LineStyle><color>ffb18ff4</color><width>2</width></LineStyle>
+      <PolyStyle><color>4db18ff4</color><fill>1</fill><outline>1</outline></PolyStyle>
+    </Style>
+
+    <Style id="poly-black">
+      <LineStyle><color>ff000000</color><width>2</width></LineStyle>
+      <PolyStyle><color>4d000000</color><fill>1</fill><outline>1</outline></PolyStyle>
+    </Style>
+
+    <Style id="poly-red-major">
+      <IconStyle>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://maps.google.com/mapfiles/kml/pal4/icon57.png</href>
+        </Icon>
+      </IconStyle>
+      <LineStyle><color>ff0000ff</color><width>4</width></LineStyle>
+      <PolyStyle><color>4d0000ff</color><fill>1</fill><outline>1</outline></PolyStyle>
+      <LabelStyle>
+        <color>ff0000ff</color>
+        <scale>2.5</scale>
+      </LabelStyle>
+    </Style>
+
+    <!-- Cell Tower Sector Visualization styles -->
+    <Style id="sector-a">
+      <LineStyle><color>6600ffff</color><width>2</width></LineStyle>
+      <PolyStyle><color>1a00ffff</color><fill>1</fill><outline>1</outline></PolyStyle>
+    </Style>
+
+    <Style id="sector-b">
+      <LineStyle><color>6600ffff</color><width>2</width></LineStyle>
+      <PolyStyle><color>1a00ffff</color><fill>1</fill><outline>1</outline></PolyStyle>
+    </Style>
+
+    <Style id="sector-c">
+      <LineStyle><color>6600ffff</color><width>2</width></LineStyle>
+      <PolyStyle><color>1a00ffff</color><fill>1</fill><outline>1</outline></PolyStyle>
+    </Style>
+
+    <!-- Sector arm/wing style (for the line extending from tower to sector) -->
+    <Style id="sector-arm">
+      <LineStyle><color>ff000000</color><width>2</width></LineStyle>
+    </Style>
+
+    <!-- GPS Phone Trail Style - bright blue -->
+    <Style id="gps-trail-blue">
+      <LineStyle>
+        <color>ffFF5500</color>
+        <width>5</width>
+      </LineStyle>
+    </Style>
+
+    <!-- Rip Rap Location Styles -->
+    <gx:CascadingStyle kml:id="__managed_style_BA7A17F13F3C973A3074">
+        <Style>
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=d32f2f&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>4.8</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_AB3129944C3C973A3074">
+        <Style>
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=d32f2f&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>3.2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_9FF21C02F23C973A3074">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_AB3129944C3C973A3074</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_BA7A17F13F3C973A3074</styleUrl>
+        </Pair>
+    </StyleMap>
+
+    <!-- Tower Sector Guide Styles -->
+    <gx:CascadingStyle kml:id="__managed_style_22A1225ADB3C6C473773">
+        <Style>
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff00ffff</color>
+                <width>9.6</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>ff00ffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_13002401153C6C473773">
+        <Style>
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff00ffff</color>
+                <width>6.4</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>ff00ffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_0632BF037A3C6C473773">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_13002401153C6C473773</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_22A1225ADB3C6C473773</styleUrl>
+        </Pair>
+    </StyleMap>
+
+    <!-- Yellow Marker Styles (imported from user KML) -->
+    <gx:CascadingStyle kml:id="__managed_style_27B34526283C9646C743">
+        <Style>
+            <IconStyle>
+                <scale>1.32</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2003&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>4.8</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_16727958A33C9646C743">
+        <Style>
+            <IconStyle>
+                <scale>1.1</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2003&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>3.2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_044B21CBED3C9646C743">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_16727958A33C9646C743</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_27B34526283C9646C743</styleUrl>
+        </Pair>
+    </StyleMap>
+
+    <!-- Yellow Marker Styles with Labels (for markers 15-19) -->
+    <gx:CascadingStyle kml:id="__managed_style_266477DCA13C967DC0A6">
+        <Style>
+            <IconStyle>
+                <scale>1.32</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2003&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.9</scale>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>4.8</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_1C62AEB4163C967DC0A6">
+        <Style>
+            <IconStyle>
+                <scale>1.1</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2003&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <scale>0.9</scale>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>3.2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_07DAFE461A3C967DC0A6">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_1C62AEB4163C967DC0A6</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_266477DCA13C967DC0A6</styleUrl>
+        </Pair>
+    </StyleMap>
+
+    <!-- Yellow Marker Style for Marker 14 -->
+    <gx:CascadingStyle kml:id="__managed_style_193102CD3C3C969D7DB4">
+        <Style>
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2003&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>3.2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_2CF3EEF44A3C969D7DB4">
+        <Style>
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=fbc02d&amp;id=2003&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>4.8</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_0D5065F3083C969D7DB4">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_193102CD3C3C969D7DB4</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_2CF3EEF44A3C969D7DB4</styleUrl>
+        </Pair>
+    </StyleMap>
+
+    <!-- Embedded Dataset styles (formerly referenced via NetworkLink) -->
+    <Style id="pointStyle">
+      <IconStyle>
+        <color>ffffffff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=ef5350&amp;id=2006&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0.9</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="pointStyle-nolabel">
+      <IconStyle>
+        <color>ffffffff</color>
+        <scale>1.1</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=ef5350&amp;id=2006&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="towerStyle">
+      <IconStyle>
+        <color>ffffffff</color>
+        <scale>1.5</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=fbc235&amp;id=2051&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0.75</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="towerStyle-nolabel">
+      <IconStyle>
+        <color>ffffffff</color>
+        <scale>1.5</scale>
+        <Icon>
+          <href>https://earth.google.com/earth/document/icon?color=fbc235&amp;id=2051&amp;scale=4</href>
+        </Icon>
+        <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle><scale>0</scale></LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[
+          <div style="font-family:Segoe UI, Arial, sans-serif; font-size:13px; line-height:1.35">
+            <h2 style="margin:0 0 6px 0">$[name]</h2>
+            <div style="margin:0 0 8px 0">$[description]</div>
+            <div style="margin-top:8px; font-size:12px; opacity:.85">
+              <b>Category:</b> $[__managed_schema/COL593B4A5607B112E8]<br/>
+              <b>Date:</b> $[__managed_schema/COL593B4A56078FF545]<br/>
+              <b>Cite:</b> $[__managed_schema/COL593B4A56077F3D27]<br/>
+              <b>Source:</b> $[__managed_schema/COL593B4A56070D8F2D]
+            </div>
+          </div>
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+
+    <Style id="lineStyle">
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+
+    <Folder id="594751BE5300005B">
+        <name>MAJOR EVENT LABELS</name>
+        <open>0</open>
+        <snippet></snippet>
+        <description>Large text labels with polygon outlines marking major event locations</description>
+        <styleUrl>#__managed_style_0F081E4D1D3C699CD043</styleUrl>
+        <Placemark id="594751BE5300005C">
+            <name>ABDUCTION SITE</name>
+            <snippet></snippet>
+            <description><![CDATA[<b>Major Event:</b> Abduction location<br/>
+<b>Date:</b> April 13, 2011 (approx. 7:45 AM)<br/>
+<b>Area:</b> General vicinity of reported abduction]]></description>
+            <styleUrl>#__managed_style_F0CDBDCE163C69A26266</styleUrl>
+            <MultiGeometry>
+                <Point>
+                    <coordinates>-88.17477273224679,35.6785775930745,0</coordinates>
+                </Point>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <coordinates>
+                                -88.17477273224679,35.6815775930745,0 -88.17623939891349,35.6813177763412,0 -88.1775393989135,35.6806177763412,0 -88.1785393989135,35.6795177763412,0 -88.17907273224679,35.6782511096745,0 -88.17913939891351,35.6769177763412,0 -88.17873939891351,35.6756177763412,0 -88.17793939891349,35.6745177763412,0 -88.17680606558019,35.6737177763412,0 -88.1754393989135,35.6733177763412,0 -88.1740060655802,35.6733177763412,0 -88.1726393989135,35.6737177763412,0 -88.1715060655802,35.6745177763412,0 -88.17070606558021,35.6756177763412,0 -88.17030606558021,35.6769177763412,0 -88.1703727322468,35.6782511096745,0 -88.1709060655802,35.6795177763412,0 -88.1719060655802,35.6806177763412,0 -88.1732060655802,35.6813177763412,0 -88.17477273224679,35.6815775930745,0
+                            </coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </MultiGeometry>
+        </Placemark>
+        <Placemark id="594751BE5300005D">
+            <name>ALLEGED HOMICIDE LOCATION</name>
+            <snippet></snippet>
+            <description><![CDATA[<b>Major Event:</b> Tennessee River - Interstate 40 Bridge<br/>
+<b>Testimony:</b> Jason Autry testified location where body was taken<br/>
+<b>Evidence:</b> Nursing papers found at bridge location]]></description>
+            <styleUrl>#__managed_style_F0CDBDCE163C69A26266</styleUrl>
+            <MultiGeometry>
+                <Point>
+                    <coordinates>-87.9434109,35.8680952,0</coordinates>
+                </Point>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <coordinates>
+                                -87.9434109,35.8720952,0 -87.9448775666667,35.8718353833333,0 -87.94617756666671,35.8711353833333,0 -87.9471775666667,35.8700353833333,0 -87.9477109,35.8687687166667,0 -87.9477775666667,35.8674353833333,0 -87.9473775666667,35.8661353833333,0 -87.9465775666667,35.8650353833333,0 -87.9454442333333,35.8642353833333,0 -87.94407756666671,35.8638353833333,0 -87.9426442333333,35.8638353833333,0 -87.9412775666667,35.8642353833333,0 -87.9401442333333,35.8650353833333,0 -87.9393442333333,35.8661353833333,0 -87.9389442333333,35.8674353833333,0 -87.9390109,35.8687687166667,0 -87.93954423333329,35.8700353833333,0 -87.9405442333333,35.8711353833333,0 -87.9418442333333,35.8718353833333,0 -87.9434109,35.8720952,0
+                            </coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </MultiGeometry>
+        </Placemark>
+        <Placemark id="594751BE5300005E">
+            <name>BODY DISCOVERY SITE</name>
+            <snippet></snippet>
+            <description><![CDATA[<b>Major Event:</b> Remains recovery location<br/>
+<b>Date:</b> September 7, 2014<br/>
+<b>Discovered by:</b> Ernest "Larry" Stone (ginseng hunter)<br/>
+<b>Details:</b> Skull found under upside-down bucket near cell tower]]></description>
+            <styleUrl>#__managed_style_F0CDBDCE163C69A26266</styleUrl>
+            <MultiGeometry>
+                <Point>
+                    <coordinates>-88.16926100000001,35.8215758,0</coordinates>
+                </Point>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <coordinates>
+                                -88.16926100000001,35.8245758,0 -88.17072766666671,35.8243159833333,0 -88.17202766666669,35.8236159833333,0 -88.1730276666667,35.8225159833333,0 -88.17356100000001,35.8212493166667,0 -88.1736276666667,35.8199159833333,0 -88.1732276666667,35.8186159833333,0 -88.17242766666671,35.8175159833333,0 -88.17129433333329,35.8167159833333,0 -88.16992766666669,35.8163159833333,0 -88.1684943333333,35.8163159833333,0 -88.1671276666667,35.8167159833333,0 -88.1659943333333,35.8175159833333,0 -88.1651943333333,35.8186159833333,0 -88.1647943333333,35.8199159833333,0 -88.164861,35.8212493166667,0 -88.1653943333333,35.8225159833333,0 -88.1663943333333,35.8236159833333,0 -88.1676943333333,35.8243159833333,0 -88.16926100000001,35.8245758,0
+                            </coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </MultiGeometry>
+        </Placemark>
+        <Placemark id="594751BE5300005F">
+            <name>ATM LOCATION</name>
+            <snippet></snippet>
+            <styleUrl>#__managed_style_64027B0D083C69F99AF8</styleUrl>
+            <MultiGeometry>
+                <Point>
+                    <coordinates>-88.1279471,35.6492403,0</coordinates>
+                </Point>
+                <Polygon>
+                    <outerBoundaryIs>
+                        <LinearRing>
+                            <coordinates>
+                                -88.1279471,35.6522403,0 -88.1294137666667,35.6519804833333,0 -88.1307137666667,35.6512804833333,0 -88.13171376666671,35.6501804833333,0 -88.1322471,35.6489138166667,0 -88.1323137666667,35.6475804833333,0 -88.1319137666667,35.6462804833333,0 -88.1311137666667,35.6451804833333,0 -88.1299804333333,35.6443804833333,0 -88.1286137666667,35.6439804833333,0 -88.12718043333329,35.6439804833333,0 -88.1258137666667,35.6443804833333,0 -88.1246804333333,35.6451804833333,0 -88.1238804333333,35.6462804833333,0 -88.1234804333333,35.6475804833333,0 -88.1235471,35.6489138166667,0 -88.1240804333333,35.6501804833333,0 -88.1250804333333,35.6512804833333,0 -88.1263804333333,35.6519804833333,0 -88.1279471,35.6522403,0
+                            </coordinates>
+                        </LinearRing>
+                    </outerBoundaryIs>
+                </Polygon>
+            </MultiGeometry>
+        </Placemark>
+    </Folder>
+
+    <Folder>
+      <name>KEY LOCATIONS AND EVIDENCE RECOVERY</name>
+
+      <Placemark id="pm-bobo-residence">
+        <name><![CDATA[HOLLY BOBO'S]]></name>
+        <description><![CDATA[<b>Event:</b> Kidnapping scene; neighbor James Barnes heard screaming here at ~7:45–7:50 a.m. <b>[cite: 53-54]</b><br/>
+      <b>Evidence:</b> Blood containing the victim's DNA found on the garage floor. <b>[cite: 45]</b><br/>
+      <b>Witness:</b> The victim's brother reported seeing the victim walking into the woods from here. <b>[cite: 107]</b><br/>
+      <b>Notes:</b> Residence address listed in this file as 681 Swan Johnson Road.<br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <ExtendedData>
+          <SchemaData schemaUrl="#__managed_schema">
+            <SimpleData name="COL593B4A5607B112E8">Residence / kidnapping scene</SimpleData>
+            <SimpleData name="COL593B4A56078FF545">2011-04-13</SimpleData>
+            <SimpleData name="COL593B4A56077F3D27">45;53-54;107</SimpleData>
+            <SimpleData name="COL593B4A56070D8F2D">2022 appellate opinion (State v. Zachary Rye Adams)</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.1758007,35.6792874,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark id="pm-lunchbox">
+        <name><![CDATA[LUNCHBOX RECOVERY SITE (GRAVES PROPERTY)]]></name>
+        <description><![CDATA[<b>Recovered by:</b> Jon Graves.<br/>
+      <b>Description:</b> Graves found the victim's lunchbox (containing a sandwich) in a creek on his property while searching barns. <b>[cite: 268]</b><br/>
+      <b>Date:</b> 2011-04-14 (reported found). <b>[cite: 265]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <ExtendedData>
+          <SchemaData schemaUrl="#__managed_schema">
+            <SimpleData name="COL593B4A5607B112E8">Evidence recovery</SimpleData>
+            <SimpleData name="COL593B4A56078FF545">2011-04-14</SimpleData>
+            <SimpleData name="COL593B4A56077F3D27">265;268</SimpleData>
+            <SimpleData name="COL593B4A56070D8F2D">2022 appellate opinion (State v. Zachary Rye Adams)</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <styleUrl>#pt-evidence</styleUrl>
+        <Point><coordinates>-88.1343227,35.731971,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[YELLOW SPRINGS COMMUNITY (PAPER FOUND)]]></name>
+        <description><![CDATA[<b>Recovered by:</b> Gerald Stephens.<br/>
+      <b>Description:</b> Found a "wadded up" paper with the victim's name, address, and handwriting. <b>[cite: 273]</b><br/>
+      <b>Location detail:</b> About 300–400 feet from where underwear (not belonging to the victim) was found. <b>[cite: 273]</b><br/>
+      <b>Location detail:</b> About 75 feet from Austin's driveway. <b>[cite: 487]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-evidence</styleUrl>
+        <Point><coordinates>-88.1233707,35.8103424,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[RECEIPT RECOVERY LOCATION]]></name>
+        <description><![CDATA[<b>Description:</b> Trooper Rainey described driving routes where evidence was recovered, including a credit-card receipt with the victim's name. <b>[cite: 158]</b><br/>
+      <b>Location detail:</b> In the Yellow Springs and Holladay communities area. <b>[cite: 158]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-evidence</styleUrl>
+        <Point><coordinates>-88.1213405,35.8070377,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark id="pm-cellphone">
+        <name><![CDATA[CELL PHONE RECOVERY SITE]]></name>
+        <description><![CDATA[<b>Recovered by:</b> Emily Pratt and search team.<br/>
+      <b>Date:</b> 2011-04-24 (reported found). <b>[cite: 276]</b><br/>
+      <b>Location detail:</b> About five miles from the victim's home. <b>[cite: 277]</b><br/>
+      <b>Notes:</b> Point placement is approximate.<br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <ExtendedData>
+          <SchemaData schemaUrl="#__managed_schema">
+            <SimpleData name="COL593B4A5607B112E8">Evidence recovery</SimpleData>
+            <SimpleData name="COL593B4A56078FF545">2011-04-24</SimpleData>
+            <SimpleData name="COL593B4A56077F3D27">276;277</SimpleData>
+            <SimpleData name="COL593B4A56070D8F2D">2022 appellate opinion (State v. Zachary Rye Adams)</SimpleData>
+            <SimpleData name="COL593B4A56072A2CC3">approx</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <styleUrl>#pt-evidence</styleUrl>
+        <Point><coordinates>-88.1146431,35.6849778,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark id="pm-sim">
+        <name><![CDATA[SIM CARD RECOVERY SITE]]></name>
+        <description><![CDATA[<b>Recovered by:</b> Ednesha Brasher's brother.<br/>
+      <b>Date:</b> 2011-05-02 (reported found). <b>[cite: 278]</b><br/>
+      <b>Context:</b> Found while riding bicycles near the victim's home. <b>[cite: 278]</b><br/>
+      <b>Notes:</b> Some other accounts list 2011-05-03; retain the appellate-opinion date above as the cited reference.<br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <ExtendedData>
+          <SchemaData schemaUrl="#__managed_schema">
+            <SimpleData name="COL593B4A5607B112E8">Evidence recovery</SimpleData>
+            <SimpleData name="COL593B4A56078FF545">2011-05-02</SimpleData>
+            <SimpleData name="COL593B4A56077F3D27">278</SimpleData>
+            <SimpleData name="COL593B4A56070D8F2D">2022 appellate opinion (State v. Zachary Rye Adams)</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <styleUrl>#pt-evidence</styleUrl>
+        <Point><coordinates>-88.1194067,35.6584578,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark id="pm-remains">
+        <name><![CDATA[REMAINS RECOVERY SITE]]></name>
+        <description><![CDATA[<b>Recovered by:</b> Ernest "Larry" Stone (ginseng hunter).<br/>
+      <b>Date:</b> 2014-09-07 (reported located). <b>[cite: 282]</b><br/>
+      <b>Description:</b> A skull was found under an upside-down bucket in the woods near a cell phone tower. <b>[cite: 282-284]</b><br/>
+      <b>Location detail:</b> About three miles from Austin's home; about five miles from the Defendant's home. <b>[cite: 507]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <ExtendedData>
+          <SchemaData schemaUrl="#__managed_schema">
+            <SimpleData name="COL593B4A5607B112E8">Evidence recovery</SimpleData>
+            <SimpleData name="COL593B4A56078FF545">2014-09-07</SimpleData>
+            <SimpleData name="COL593B4A56077F3D27">282-284;507</SimpleData>
+            <SimpleData name="COL593B4A56070D8F2D">2022 appellate opinion (State v. Zachary Rye Adams)</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <styleUrl>#pt-evidence</styleUrl>
+        <Point><coordinates>-88.169261,35.8215758,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark id="pm-pistol">
+        <name><![CDATA[PISTOL RECOVERY (JOE HOLLADAY ROAD)]]></name>
+        <description><![CDATA[<b>Recovered by:</b> Steve Deaton (lead diver).<br/>
+      <b>Date:</b> 2017-05-25 (reported recovered). <b>[cite: 516]</b><br/>
+      <b>Location detail:</b> In a creek-like "drainage feature" along Joe Holladay Road. <b>[cite: 516]</b><br/>
+      <b>Context:</b> Victor Dinsmore testified his wife disposed of the pistol in a creek 3–4 miles from Yellow Springs Road. <b>[cite: 1093]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <ExtendedData>
+          <SchemaData schemaUrl="#__managed_schema">
+            <SimpleData name="COL593B4A5607B112E8">Evidence recovery</SimpleData>
+            <SimpleData name="COL593B4A56078FF545">2017-05-25</SimpleData>
+            <SimpleData name="COL593B4A56077F3D27">516;1093</SimpleData>
+            <SimpleData name="COL593B4A56070D8F2D">2022 appellate opinion (State v. Zachary Rye Adams)</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <styleUrl>#pt-evidence</styleUrl>
+        <Point><coordinates>-88.154404,35.8410278,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[BIRDSONG BRIDGE / I-40 CROSSING]]></name>
+        <description><![CDATA[<b>Testimony:</b> Jason Autry testified they took the body to the Tennessee River under the Interstate 40 bridge. <b>[cite: 321]</b><br/>
+      <b>Evidence:</b> Nursing papers found where the bridge crosses over I-40. <b>[cite: 489]</b><br/>
+      <b>Statements:</b> Defendant reportedly said to "put up under the Birdsong bridge." <b>[cite: 251]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-other</styleUrl>
+        <Point><coordinates>-87.9434109,35.8680952,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[THE "OLD BARN" (HICKERSON PROPERTY)]]></name>
+        <description><![CDATA[<b>Testimony:</b> Jason Autry searched his late grandmother's barn on Yellow Springs Road for evidence. <b>[cite: 376]</b><br/>
+      <b>Witness:</b> Brian Vitt lived across from the barn. <b>[cite: 415]</b><br/>
+      <b>Status:</b> Reported destroyed in late 2012 or early 2013. <b>[cite: 752]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-other</styleUrl>
+        <Point><coordinates>-88.1277967,35.8159405,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+    <Folder>
+      <name>PEOPLE AND RESIDENCES</name>
+
+      <Placemark>
+        <name><![CDATA[ZACHARY ADAMS's]]></name>
+        <description><![CDATA[<b>Location detail:</b> Located north of Parsons, near Holladay, not far from Yellow Springs Road. <b>[cite: 159]</b><br/>
+      <b>Testimony:</b> Autry arrived here at ~2:30 p.m. and reported seeing the men fighting. <b>[cite: 341]</b><br/>
+      <b>Testimony:</b> Stephen Young reported seeing the Defendant vacuuming a truck here. <b>[cite: 176]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.0837789,35.8214583,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[SHAYNE AUSTIN]]></name>
+        <description><![CDATA[<b>Testimony:</b> Autry arrived here around 9:00 a.m. on 2011-04-13. <b>[cite: 308]</b><br/>
+      <b>Observation:</b> Autry reported seeing a large fire in a burn barrel; the victim's father later reported seeing a burn barrel here. <b>[cite: 308, 952]</b><br/>
+      <b>Location:</b> Yellow Springs community. <b>[cite: 308]</b><br/>
+      <b>Notes:</b> Address commonly listed as 30 Yellow Spring Rd (not a court label).<br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.1204944,35.8064745,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[BRENDA O'BRYANT / KELLY RIDGE]]></name>
+        <description><![CDATA[<b>Testimony:</b> Brenda O'Bryant's parents lived across from "Kelly Ridge". <b>[cite: 423]</b><br/>
+      <b>Testimony:</b> A man (identified as Autry) asked to fish in their ponds. <b>[cite: 425]</b><br/>
+      <b>Statement:</b> Defendant told Autry "we throwed her out near Kelly Ridge." <b>[cite: 356]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.1408102,35.8229219,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[ANGELA SCOTT]]></name>
+        <description><![CDATA[<b>Identity:</b> Angela Scott was Jason Autry's girlfriend. <b>[cite: 431]</b><br/>
+      <b>Location:</b> Camden area (tied to cell-tower data described near her home). <b>[cite: 551]</b><br/>
+      <b>Notes:</b> Coordinate represents a mapped residence point used in this file.<br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.069439,36.022526,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[DOTTIE COOLEY'S]]></name>
+        <description><![CDATA[<b>Testimony:</b> The men drove to Dottie Cooley's home to meet Victor Dinsmore. <b>[cite: 345]</b><br/>
+      <b>Location detail:</b> About two miles from the Defendant's home. <b>[cite: 345]</b><br/>
+      <b>Witness:</b> Cleaner Debbie Dorris reported seeing three men there between ~2:30 and 3:30 p.m. <b>[cite: 521]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.0984935,35.8186527,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[VICTOR DINSMORE'S]]></name>
+        <description><![CDATA[<b>Location:</b> Yellow Springs Road in the Holladay community. <b>[cite: 436]</b><br/>
+      <b>Proximity:</b> The victim's remains were found less than two miles from this location. <b>[cite: 470]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.1394212,35.8184545,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[VICTOR DINSMORE'S SHOP]]></name>
+        <description><![CDATA[<b>Testimony:</b> Defendant hid his white truck in Dinsmore's shop. <b>[cite: 452]</b><br/>
+      <b>Notes:</b> Coordinate represents a mapped shop location near Dinsmore's residence.<br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-person</styleUrl>
+        <Point><coordinates>-88.1393744,35.8186962,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[JUANITA HICKERSON]]></name>
+        <description><![CDATA[<b>Identity:</b> Late grandmother of Shayne Austin and Jason Autry. <b>[cite: 415]</b><br/>
+      <b>Evidence:</b> Money and a receipt with the victim's name were found on her property. <b>[cite: 488]</b><br/>
+      <b>Location detail:</b> Located about one mile from Austin's home. <b>[cite: 725]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.127187,35.8166,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[TERRY BRITT'S]]></name>
+        <description><![CDATA[<b>Location detail:</b> Four miles south of Yellow Springs Church. <b>[cite: 491]</b><br/>
+      <b>Investigation:</b> Described as the "geographic center" of where evidence was recovered. <b>[cite: 791]</b><br/>
+      <b>Action:</b> Wiretaps and search warrants executed here. <b>[cite: 492-493]</b><br/>
+      <b>Notes:</b> Coordinate may reflect later mapping/property-record work; court text provides relative location.<br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.1304145,35.7683869,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[DICK ADAMS's]]></name>
+        <description><![CDATA[<b>Identity:</b> Defendant's grandfather. <b>[cite: 91]</b><br/>
+      <b>Location detail:</b> Located on the same property as the Defendant's home. <b>[cite: 91]</b><br/>
+      <b>Testimony:</b> The victim's mother visited here in July 2011. <b>[cite: 90-91]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.0840042,35.8206623,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[SHAYNE AUSTIN PARENTS' HOUSE]]></name>
+        <description><![CDATA[<b>Notes:</b> Labeled in this file as “Shayne’s Parent’s House.”<br/>
+      <b>Source:</b> Reporting / testimony references (as compiled in this file)
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.101237,35.817543,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark>
+        <name><![CDATA[BRIAN VITT'S]]></name>
+        <description><![CDATA[<b>Location detail:</b> In the Yellow Springs community across from Hickerson property. <b>[cite: 415]</b><br/>
+      <b>Testimony:</b> Vitt reported mowing his yard here on the morning of 2011-04-13. <b>[cite: 417]</b><br/>
+      <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+      ]]></description>
+        <styleUrl>#pt-residence</styleUrl>
+        <Point><coordinates>-88.1283117,35.8176783,0</coordinates></Point>
+      </Placemark>
+
+      <Placemark id="0638116B623C81DDC71E">
+        <name>"Rip Rap" Location</name>
+        <LookAt>
+            <longitude>-87.94486497502393</longitude>
+            <latitude>35.86896825179291</latitude>
+            <altitude>126.8578983845767</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>35</gx:fovy>
+            <range>212.0111103228556</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_9FF21C02F23C973A3074</styleUrl>
+        <Point>
+            <coordinates>-87.94491500763655,35.86902518642294,126.9715439033687</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+    <Folder>
+      <name>CELL TOWERS</name>
+
+      <!-- TOWER NEAR HOLLADAY AND YELLOW SPRINGS -->
+      <Folder>
+        <name>TOWER NEAR HOLLADAY AND YELLOW SPRINGS</name>
+        <open>0</open>
+        <Placemark>
+          <name><![CDATA[TOWER NEAR HOLLADAY AND YELLOW SPRINGS]]></name>
+          <description><![CDATA[<b>Relevance:</b> Defendant's phone communicated here at 8:19 a.m. <b>[cite: 903]</b><br/>
+        <b>Relevance:</b> Victim's phone communicated here at 9:06 a.m. <b>[cite: 531]</b><br/>
+        <b>Location detail:</b> Located near the Defendant's home. <b>[cite: 546]</b><br/>
+        <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+        ]]></description>
+          <styleUrl>#pt-cell</styleUrl>
+          <Point><coordinates>-88.0894732,35.8449259,0</coordinates></Point>
+        </Placemark>
+        <Folder>
+          <name>SECTOR A</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0894732,35.8449259,0 -88.0894732,35.8719259,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <styleUrl>#sector-a</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.0894732,35.8449259,0
+                -88.0894732,35.8719259,0
+                -88.0837732,35.8715619,0
+                -88.0781732,35.8703619,0
+                -88.0728732,35.8682619,0
+                -88.0682732,35.8655619,0
+                -88.0641732,35.8622619,0
+                -88.0608732,35.8584259,0
+                -88.0584732,35.8541259,0
+                -88.0569732,35.8496259,0
+                -88.0561732,35.8449259,0
+                -88.0569732,35.8402259,0
+                -88.0584732,35.8357259,0
+                -88.0608732,35.8314259,0
+                -88.0894732,35.8449259,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR B</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0894732,35.8449259,0 -88.0608732,35.8314259,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <styleUrl>#sector-b</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.0894732,35.8449259,0
+                -88.0608732,35.8314259,0
+                -88.0641732,35.8275899,0
+                -88.0682732,35.8242899,0
+                -88.0728732,35.8215619,0
+                -88.0781732,35.8194899,0
+                -88.0837732,35.8182619,0
+                -88.0894732,35.8179259,0
+                -88.0951732,35.8182619,0
+                -88.1007732,35.8194899,0
+                -88.1060732,35.8215619,0
+                -88.1106732,35.8242899,0
+                -88.1147732,35.8275899,0
+                -88.1180732,35.8314259,0
+                -88.0894732,35.8449259,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR C</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0894732,35.8449259,0 -88.1180732,35.8314259,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <styleUrl>#sector-c</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.0894732,35.8449259,0
+                -88.1180732,35.8314259,0
+                -88.1204732,35.8357259,0
+                -88.1219732,35.8402259,0
+                -88.1227732,35.8449259,0
+                -88.1219732,35.8496259,0
+                -88.1204732,35.8541259,0
+                -88.1180732,35.8584259,0
+                -88.1147732,35.8622619,0
+                -88.1106732,35.8655619,0
+                -88.1060732,35.8682619,0
+                -88.1007732,35.8703619,0
+                -88.0951732,35.8715619,0
+                -88.0894732,35.8719259,0
+                -88.0894732,35.8449259,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+      </Folder>
+
+      <!-- CHESTERFIELD CELL TOWER -->
+      <Folder>
+        <name>CHESTERFIELD CELL TOWER</name>
+        <open>0</open>
+        <visibility>0</visibility>
+        <Placemark>
+          <name><![CDATA[CHESTERFIELD CELL TOWER]]></name>
+          <description><![CDATA[<b>Notes:</b> Cell tower location included for mapping tower geography referenced in case materials.<br/>
+        <b>Source:</b> Tower location data (as compiled in this file)
+        ]]></description>
+          <styleUrl>#pt-cell</styleUrl>
+          <Point><coordinates>-88.2741621,35.6383075,0</coordinates></Point>
+        </Placemark>
+        <Folder>
+          <name>SECTOR A</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2741621,35.6383075,0 -88.2741621,35.6653075,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <styleUrl>#sector-a</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.2741621,35.6383075,0
+                -88.2741621,35.6653075,0
+                -88.2684621,35.6649435,0
+                -88.2628621,35.6637435,0
+                -88.2575621,35.6616435,0
+                -88.2529621,35.6589435,0
+                -88.2488621,35.6556435,0
+                -88.2455621,35.6518075,0
+                -88.2431621,35.6475075,0
+                -88.2416621,35.6430075,0
+                -88.2408621,35.6383075,0
+                -88.2416621,35.6336075,0
+                -88.2431621,35.6291075,0
+                -88.2455621,35.6248075,0
+                -88.2741621,35.6383075,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR B</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2741621,35.6383075,0 -88.2455621,35.6248075,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <styleUrl>#sector-b</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.2741621,35.6383075,0
+                -88.2455621,35.6248075,0
+                -88.2488621,35.6209715,0
+                -88.2529621,35.6176715,0
+                -88.2575621,35.6149435,0
+                -88.2628621,35.6128715,0
+                -88.2684621,35.6116435,0
+                -88.2741621,35.6113075,0
+                -88.2798621,35.6116435,0
+                -88.2854621,35.6128715,0
+                -88.2907621,35.6149435,0
+                -88.2953621,35.6176715,0
+                -88.2994621,35.6209715,0
+                -88.3027621,35.6248075,0
+                -88.2741621,35.6383075,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR C</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2741621,35.6383075,0 -88.3027621,35.6248075,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <styleUrl>#sector-c</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.2741621,35.6383075,0
+                -88.3027621,35.6248075,0
+                -88.3051621,35.6291075,0
+                -88.3066621,35.6336075,0
+                -88.3074621,35.6383075,0
+                -88.3066621,35.6430075,0
+                -88.3051621,35.6475075,0
+                -88.3027621,35.6518075,0
+                -88.2994621,35.6556435,0
+                -88.2953621,35.6589435,0
+                -88.2907621,35.6616435,0
+                -88.2854621,35.6637435,0
+                -88.2798621,35.6649435,0
+                -88.2741621,35.6653075,0
+                -88.2741621,35.6383075,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+      </Folder>
+
+      <!-- PARSONS CELL TOWER -->
+      <Folder>
+        <name>PARSONS CELL TOWER</name>
+        <open>0</open>
+        <Placemark>
+          <name><![CDATA[PARSONS CELL TOWER]]></name>
+          <description><![CDATA[<b>Relevance:</b> Victim's phone communicated here at 9:25 a.m. <b>[cite: 916]</b><br/>
+        <b>Relevance:</b> Defendant's phone communicated here between 11:16 a.m. and 12:18 p.m. <b>[cite: 550]</b><br/>
+        <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+        ]]></description>
+          <styleUrl>#pt-cell</styleUrl>
+          <Point><coordinates>-88.121126,35.6675014,0</coordinates></Point>
+        </Placemark>
+        <Folder>
+          <name>SECTOR A</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.121126,35.6675014,0 -88.121126,35.6945014,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <styleUrl>#sector-a</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.121126,35.6675014,0
+                -88.121126,35.6945014,0
+                -88.115426,35.6941374,0
+                -88.109826,35.6929374,0
+                -88.104526,35.6908374,0
+                -88.099926,35.6881374,0
+                -88.095526,35.6848374,0
+                -88.092526,35.6810014,0
+                -88.090126,35.6767014,0
+                -88.088526,35.6722014,0
+                -88.087726,35.6675014,0
+                -88.088526,35.6628014,0
+                -88.090126,35.6583014,0
+                -88.092526,35.6540014,0
+                -88.121126,35.6675014,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR B</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.121126,35.6675014,0 -88.092526,35.6540014,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <styleUrl>#sector-b</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.121126,35.6675014,0
+                -88.092526,35.6540014,0
+                -88.095526,35.6501654,0
+                -88.099926,35.6468654,0
+                -88.104526,35.6441374,0
+                -88.109826,35.6420654,0
+                -88.115426,35.6408374,0
+                -88.121126,35.6405014,0
+                -88.126826,35.6408374,0
+                -88.132426,35.6420654,0
+                -88.137726,35.6441374,0
+                -88.142326,35.6468654,0
+                -88.146726,35.6501654,0
+                -88.149726,35.6540014,0
+                -88.121126,35.6675014,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR C</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.121126,35.6675014,0 -88.149726,35.6540014,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <styleUrl>#sector-c</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.121126,35.6675014,0
+                -88.149726,35.6540014,0
+                -88.151726,35.6583014,0
+                -88.153726,35.6628014,0
+                -88.154526,35.6675014,0
+                -88.153726,35.6722014,0
+                -88.151726,35.6767014,0
+                -88.149726,35.6810014,0
+                -88.146726,35.6848374,0
+                -88.142326,35.6881374,0
+                -88.137726,35.6908374,0
+                -88.132426,35.6929374,0
+                -88.126826,35.6941374,0
+                -88.121126,35.6945014,0
+                -88.121126,35.6675014,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+      </Folder>
+
+      <!-- TOWER NEAR NATCHEZ TRACE STATE PARK -->
+      <Folder>
+        <name>TOWER NEAR NATCHEZ TRACE STATE PARK</name>
+        <open>0</open>
+        <Placemark>
+          <name><![CDATA[TOWER NEAR NATCHEZ TRACE STATE PARK]]></name>
+          <description><![CDATA[<b>Relevance:</b> Victim's phone communicated here at 8:17 a.m. and 8:26 a.m. <b>[cite: 531]</b><br/>
+        <b>Analysis:</b> Indicated the phone moved away from the victim's home. <b>[cite: 902]</b><br/>
+        <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+        ]]></description>
+          <styleUrl>#pt-cell</styleUrl>
+          <Point><coordinates>-88.2058356,35.8160145,0</coordinates></Point>
+        </Placemark>
+        <Folder>
+          <name>SECTOR A</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2058356,35.8160145,0 -88.2058356,35.8430145,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <styleUrl>#sector-a</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.2058356,35.8160145,0
+                -88.2058356,35.8430145,0
+                -88.200136,35.8426505,0
+                -88.194536,35.8414505,0
+                -88.189236,35.8393505,0
+                -88.184636,35.8366505,0
+                -88.180236,35.8333505,0
+                -88.177236,35.8295145,0
+                -88.174836,35.8252145,0
+                -88.173236,35.8207145,0
+                -88.172436,35.8160145,0
+                -88.173236,35.8113145,0
+                -88.174836,35.8068145,0
+                -88.177236,35.8025145,0
+                -88.2058356,35.8160145,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR B</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2058356,35.8160145,0 -88.177236,35.8025145,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <styleUrl>#sector-b</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.2058356,35.8160145,0
+                -88.177236,35.8025145,0
+                -88.180236,35.7986785,0
+                -88.184636,35.7953785,0
+                -88.189236,35.7926505,0
+                -88.194536,35.7905785,0
+                -88.200136,35.7893505,0
+                -88.2058356,35.7890145,0
+                -88.211536,35.7893505,0
+                -88.217136,35.7905785,0
+                -88.222436,35.7926505,0
+                -88.227036,35.7953785,0
+                -88.231436,35.7986785,0
+                -88.234436,35.8025145,0
+                -88.2058356,35.8160145,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR C</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2058356,35.8160145,0 -88.234436,35.8025145,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <styleUrl>#sector-c</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.2058356,35.8160145,0
+                -88.234436,35.8025145,0
+                -88.236436,35.8068145,0
+                -88.238436,35.8113145,0
+                -88.239236,35.8160145,0
+                -88.238436,35.8207145,0
+                -88.236436,35.8252145,0
+                -88.234436,35.8295145,0
+                -88.231436,35.8333505,0
+                -88.227036,35.8366505,0
+                -88.222436,35.8393505,0
+                -88.217136,35.8414505,0
+                -88.211536,35.8426505,0
+                -88.2058356,35.8430145,0
+                -88.2058356,35.8160145,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+      </Folder>
+
+      <!-- CAMDEN AREA CELL TOWER -->
+      <Folder>
+        <name>CAMDEN AREA CELL TOWER</name>
+        <open>0</open>
+        <visibility>0</visibility>
+        <Placemark>
+          <name><![CDATA[CAMDEN AREA CELL TOWER]]></name>
+          <description><![CDATA[<b>Relevance:</b> Autry's phone communicated here at 6:50 a.m. <b>[cite: 551]</b><br/>
+        <b>Location detail:</b> Located near Autry's girlfriend's home. <b>[cite: 551]</b><br/>
+        <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+        ]]></description>
+          <styleUrl>#pt-cell</styleUrl>
+          <Point><coordinates>-88.0379963,36.0160773,0</coordinates></Point>
+        </Placemark>
+        <Folder>
+          <name>SECTOR A</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0379963,36.0160773,0 -88.0379963,36.0430773,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <styleUrl>#sector-a</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.0379963,36.0160773,0
+                -88.0379963,36.0430773,0
+                -88.0328963,36.0419273,0
+                -88.0280963,36.0398273,0
+                -88.0237963,36.0368773,0
+                -88.0201963,36.0332773,0
+                -88.0174963,36.0291773,0
+                -88.0157963,36.0247773,0
+                -88.0150963,36.0203773,0
+                -88.0153963,36.0160773,0
+                -88.0166963,36.0119773,0
+                -88.0188963,36.0082773,0
+                -88.0218963,36.0050773,0
+                -88.0256963,36.0025773,0
+                -88.0379963,36.0160773,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR B</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0379963,36.0160773,0 -88.0094163,36.0025773,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <styleUrl>#sector-b</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.0379963,36.0160773,0
+                -88.0256963,36.0025773,0
+                -88.0299963,36.0006773,0
+                -88.0347963,35.9996773,0
+                -88.0379963,35.9890773,0
+                -88.0432963,35.9896773,0
+                -88.0482963,35.9911773,0
+                -88.0527963,35.9935773,0
+                -88.0566963,35.9968773,0
+                -88.0596963,36.0007773,0
+                -88.0617963,36.0050773,0
+                -88.0628963,36.0097773,0
+                -88.0629963,36.0145773,0
+                -88.0620963,36.0192773,0
+                -88.0601963,36.0236773,0
+                -88.0573963,36.0274773,0
+                -88.0537963,36.0305773,0
+                -88.0494963,36.0328773,0
+                -88.0447963,36.0342773,0
+                -88.0379963,36.0160773,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR C</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0379963,36.0160773,0 -88.0665763,36.0025773,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <styleUrl>#sector-c</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.0379963,36.0160773,0
+                -88.0502963,36.0025773,0
+                -88.0557963,36.0050773,0
+                -88.0605963,36.0082773,0
+                -88.0644963,36.0122773,0
+                -88.0673963,36.0167773,0
+                -88.0691963,36.0216773,0
+                -88.0697963,36.0267773,0
+                -88.0691963,36.0318773,0
+                -88.0673963,36.0366773,0
+                -88.0644963,36.0408773,0
+                -88.0605963,36.0444773,0
+                -88.0559963,36.0471773,0
+                -88.0508963,36.0489773,0
+                -88.0454963,36.0497773,0
+                -88.0379963,36.0430773,0
+                -88.0379963,36.0160773,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+      </Folder>
+
+      <!-- ROCKY POINT CELL TOWER -->
+      <Folder>
+        <name>ROCKY POINT CELL TOWER</name>
+        <open>0</open>
+        <visibility>0</visibility>
+        <Placemark>
+          <name><![CDATA[ROCKY POINT CELL TOWER]]></name>
+          <description><![CDATA[<b>Notes:</b> Cell tower location included for mapping tower geography referenced in case materials.<br/>
+        <b>Source:</b> Tower location data (as compiled in this file)
+        ]]></description>
+          <styleUrl>#pt-cell</styleUrl>
+          <Point><coordinates>-88.1039625,35.9287191,0</coordinates></Point>
+        </Placemark>
+        <Folder>
+          <name>SECTOR A</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.1039625,35.9287191,0 -88.1039625,35.9557191,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <styleUrl>#sector-a</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.1039625,35.9287191,0
+                -88.1039625,35.9557191,0
+                -88.0988625,35.9545691,0
+                -88.0940625,35.9524691,0
+                -88.0897625,35.9495191,0
+                -88.0861625,35.9459191,0
+                -88.0834625,35.9418191,0
+                -88.0817625,35.9374191,0
+                -88.0810625,35.9330191,0
+                -88.0813625,35.9287191,0
+                -88.0826625,35.9246191,0
+                -88.0848625,35.9209191,0
+                -88.0878625,35.9177191,0
+                -88.0916625,35.9152191,0
+                -88.1039625,35.9287191,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR B</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.1039625,35.9287191,0 -88.0753825,35.9152191,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <styleUrl>#sector-b</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.1039625,35.9287191,0
+                -88.0916625,35.9152191,0
+                -88.0959625,35.9133191,0
+                -88.1007625,35.9123191,0
+                -88.1039625,35.9017191,0
+                -88.1092625,35.9023191,0
+                -88.1142625,35.9038191,0
+                -88.1187625,35.9062191,0
+                -88.1226625,35.9095191,0
+                -88.1256625,35.9134191,0
+                -88.1277625,35.9177191,0
+                -88.1288625,35.9224191,0
+                -88.1289625,35.9272191,0
+                -88.1280625,35.9319191,0
+                -88.1261625,35.9363191,0
+                -88.1233625,35.9401191,0
+                -88.1197625,35.9432191,0
+                -88.1154625,35.9455191,0
+                -88.1107625,35.9469191,0
+                -88.1039625,35.9287191,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR C</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.1039625,35.9287191,0 -88.1325425,35.9152191,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <styleUrl>#sector-c</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -88.1039625,35.9287191,0
+                -88.1162625,35.9152191,0
+                -88.1217625,35.9177191,0
+                -88.1265625,35.9209191,0
+                -88.1304625,35.9249191,0
+                -88.1333625,35.9294191,0
+                -88.1351625,35.9343191,0
+                -88.1357625,35.9394191,0
+                -88.1351625,35.9445191,0
+                -88.1333625,35.9493191,0
+                -88.1304625,35.9535191,0
+                -88.1265625,35.9571191,0
+                -88.1219625,35.9598191,0
+                -88.1168625,35.9616191,0
+                -88.1114625,35.9624191,0
+                -88.1039625,35.9557191,0
+                -88.1039625,35.9287191,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+      </Folder>
+
+      <!-- TOWER NEAR TENNESSEE RIVER -->
+      <Folder>
+        <name>TOWER NEAR TENNESSEE RIVER</name>
+        <open>0</open>
+        <Placemark>
+          <name><![CDATA[TOWER NEAR TENNESSEE RIVER]]></name>
+          <description><![CDATA[<b>Relevance:</b> Defendant's and Autry's phones communicated here at 9:25 a.m. <b>[cite: 537]</b><br/>
+        <b>Relevance:</b> Defendant's phone communicated here between 9:50 a.m. and 10:37 a.m. <b>[cite: 549]</b><br/>
+        <b>Source:</b> 2022 appellate opinion (State v. Zachary Rye Adams), line refs above
+        ]]></description>
+          <styleUrl>#pt-cell</styleUrl>
+          <Point><coordinates>-87.9716572,35.8670476,0</coordinates></Point>
+        </Placemark>
+        <Folder>
+          <name>SECTOR A</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-87.9716572,35.8670476,0 -87.9716572,35.8940476,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <styleUrl>#sector-a</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -87.9716572,35.8670476,0
+                -87.9716572,35.8940476,0
+                -87.9665572,35.8928976,0
+                -87.9617572,35.8907976,0
+                -87.9574572,35.8878476,0
+                -87.9538572,35.8842476,0
+                -87.9511572,35.8801476,0
+                -87.9494572,35.8757476,0
+                -87.9487572,35.8713476,0
+                -87.9490572,35.8670476,0
+                -87.9503572,35.8629476,0
+                -87.9525572,35.8592476,0
+                -87.9555572,35.8560476,0
+                -87.9593572,35.8535476,0
+                -87.9716572,35.8670476,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR B</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-87.9716572,35.8670476,0 -87.9430772,35.8535476,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <styleUrl>#sector-b</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -87.9716572,35.8670476,0
+                -87.9593572,35.8535476,0
+                -87.9636572,35.8516476,0
+                -87.9684572,35.8506476,0
+                -87.9716572,35.8400476,0
+                -87.9769572,35.8406476,0
+                -87.9819572,35.8421476,0
+                -87.9864572,35.8445476,0
+                -87.9903572,35.8478476,0
+                -87.9933572,35.8517476,0
+                -87.9954572,35.8560476,0
+                -87.9965572,35.8607476,0
+                -87.9966572,35.8655476,0
+                -87.9957572,35.8702476,0
+                -87.9938572,35.8746476,0
+                -87.9910572,35.8784476,0
+                -87.9874572,35.8815476,0
+                -87.9831572,35.8838476,0
+                -87.9784572,35.8852476,0
+                -87.9716572,35.8670476,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+        <Folder>
+          <name>SECTOR C</name>
+          <visibility>1</visibility>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-87.9716572,35.8670476,0 -88.0002372,35.8535476,0</coordinates>
+            </LineString>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Wedge</name>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <styleUrl>#sector-c</styleUrl>
+            <Polygon>
+              <tessellate>1</tessellate>
+              <outerBoundaryIs><LinearRing><coordinates>
+                -87.9716572,35.8670476,0
+                -87.9839572,35.8535476,0
+                -87.9894572,35.8560476,0
+                -87.9942572,35.8592476,0
+                -87.9981572,35.8632476,0
+                -88.0010572,35.8677476,0
+                -88.0028572,35.8726476,0
+                -88.0034572,35.8777476,0
+                -88.0028572,35.8828476,0
+                -88.0010572,35.8876476,0
+                -87.9981572,35.8918476,0
+                -87.9942572,35.8954476,0
+                -87.9896572,35.8981476,0
+                -87.9845572,35.8999476,0
+                -87.9791572,35.9007476,0
+                -87.9716572,35.8940476,0
+                -87.9716572,35.8670476,0
+              </coordinates></LinearRing></outerBoundaryIs>
+            </Polygon>
+          </Placemark>
+        </Folder>
+      </Folder>
+
+      <!-- Cell Tower Pings -->
+      <Folder>
+        <name>CELL TOWER PINGS</name>
+        <open>0</open>
+        <description>Cell tower ping data showing communication timestamps and tower locations</description>
+
+        <Placemark>
+          <name>CELL TOWER PINGS 1</name>
+          <description><![CDATA[<b>TowerType:</b> ATT<br/>
+<b>Time:</b> 9:10am<br/>
+<b>Date:</b> 1302652800000
+]]></description>
+          <styleUrl>#towerStyle</styleUrl>
+          <Point>
+            <coordinates>-88.0218543180404,35.8285377036733,0</coordinates>
+          </Point>
+        </Placemark>
+
+        <Placemark>
+          <name>CELL TOWER PINGS 2</name>
+          <description><![CDATA[<b>FID:</b> 1<br/>
+<b>TowerType:</b> ATT<br/>
+<b>Time:</b> 9:02am<br/>
+<b>Date:</b> 1302652800000
+]]></description>
+          <styleUrl>#towerStyle</styleUrl>
+          <Point>
+            <coordinates>-88.1276129764545,35.842345623928,0</coordinates>
+          </Point>
+        </Placemark>
+
+        <Placemark>
+          <name>CELL TOWER PINGS 3</name>
+          <description><![CDATA[<b>FID:</b> 2<br/>
+<b>TowerType:</b> ATT<br/>
+<b>Time:</b> 8:57am<br/>
+<b>Date:</b> 1302652800000
+]]></description>
+          <styleUrl>#towerStyle</styleUrl>
+          <Point>
+            <coordinates>-88.1594313038225,35.8557506982597,0</coordinates>
+          </Point>
+        </Placemark>
+
+      </Folder>
+
+    </Folder>
+
+    <Folder>
+      <name>OTHER REFERENCED PLACES</name>
+
+      <Placemark>
+        <name><![CDATA[THW]]></name>
+        <description><![CDATA[<b>Category:</b> Private business/person<br/>
+      <b>Date:</b> -88.1758007!<br/>
+      <b>Source:</b> Designated context points (as compiled in this file)
+      ]]></description>
+        <ExtendedData>
+          <SchemaData schemaUrl="#__managed_schema">
+            <SimpleData name="COL593B4A5607B112E8">Private Businessseite</SimpleData>
+            <SimpleData name="COL593B4A56078FF545"></SimpleData>
+            <SimpleData name="COL593B4A56077F3D27"></SimpleData>
+            <SimpleData name="COL593B4A56070D8F2D">Tod</SimpleData>
+          </SchemaData>
+        </ExtendedData>
+        <styleUrl>#pt-other</styleUrl>
+        <Point><coordinates>-88.1758007,35.838487,0</coordinates></Point>
+      </Placemark>
+    </Folder>
+
+    <!-- GPS Trail Styles -->
+    <gx:CascadingStyle kml:id="__managed_style_404B52A9643C69A26266">
+        <Style>
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ffFF0000</color>
+                <width>6</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_379053411F3C69A26266">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_404B52A9643C69A26266</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_56BFBDA57D3C69A26266</styleUrl>
+        </Pair>
+    </StyleMap>
+    <gx:CascadingStyle kml:id="__managed_style_56BFBDA57D3C69A26266">
+        <Style>
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ffFF0000</color>
+                <width>8</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_25DCEEDDD93C699CD043">
+        <Style>
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>4.8</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_1C8CF375873C699CD043">
+        <Style>
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff2dc0fb</color>
+                <width>3.2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>40ffffff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_0F081E4D1D3C699CD043">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_1C8CF375873C699CD043</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_25DCEEDDD93C699CD043</styleUrl>
+        </Pair>
+    </StyleMap>
+
+    <!-- MAJOR EVENT LABELS Styles -->
+    <gx:CascadingStyle kml:id="__managed_style_821FBEFC343C69F99AF8">
+        <Style>
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <color>ff0000ff</color>
+                <scale>2.5</scale>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff0000ff</color>
+                <width>4.8</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>4d0000ff</color>
+            </PolyStyle>
+            <BalloonStyle>
+                <text><![CDATA[<b>Major Event:</b> Drive-through ATM video evidence location<br/>
+<b>Bank Name:</b> Community South Bank (later acquired by CB&S Bank)<br/>
+<b>Address:</b> 51 West Main Street, Parsons, TN 38363<br/>
+<b>Evidence:</b> Drive-through ATM video<br/>
+<b>Time:</b> April 13, 2011 at approximately 11:12 AM<br/>
+<b>Vehicle:</b> White Chevrolet Silverado<br/>
+<b>Significance:</b> Contradicts State's timeline - places Adams in Parsons during the time Autry alleged they were at Tennessee River disposing of body. Trial counsel admitted failing to present this video was a significant error, calling it a "partial alibi"]]></text>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_77D59CE1313C69F99AF8">
+        <Style>
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <color>ff0000ff</color>
+                <scale>2.5</scale>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff0000ff</color>
+                <width>3.2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>4d0000ff</color>
+            </PolyStyle>
+            <BalloonStyle>
+                <text><![CDATA[<b>Major Event:</b> Drive-through ATM video evidence location<br/>
+<b>Bank Name:</b> Community South Bank (later acquired by CB&S Bank)<br/>
+<b>Address:</b> 51 West Main Street, Parsons, TN 38363<br/>
+<b>Evidence:</b> Drive-through ATM video<br/>
+<b>Time:</b> April 13, 2011 at approximately 11:12 AM<br/>
+<b>Vehicle:</b> White Chevrolet Silverado<br/>
+<b>Significance:</b> Contradicts State's timeline - places Adams in Parsons during the time Autry alleged they were at Tennessee River disposing of body. Trial counsel admitted failing to present this video was a significant error, calling it a "partial alibi"]]></text>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_64027B0D083C69F99AF8">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_77D59CE1313C69F99AF8</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_821FBEFC343C69F99AF8</styleUrl>
+        </Pair>
+    </StyleMap>
+    <gx:CascadingStyle kml:id="__managed_style_05725C17593C69A26267">
+        <Style>
+            <IconStyle>
+                <scale>1.2</scale>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <color>ff0000ff</color>
+                <scale>2.5</scale>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff0000ff</color>
+                <width>4.8</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>4d0000ff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <gx:CascadingStyle kml:id="__managed_style_1099066BA393C69A26266">
+        <Style>
+            <IconStyle>
+                <Icon>
+                    <href>https://earth.google.com/earth/document/icon?color=1976d2&amp;id=2000&amp;scale=4</href>
+                </Icon>
+                <hotSpot x="64" y="128" xunits="pixels" yunits="insetPixels"/>
+            </IconStyle>
+            <LabelStyle>
+                <color>ff0000ff</color>
+                <scale>2.5</scale>
+            </LabelStyle>
+            <LineStyle>
+                <color>ff0000ff</color>
+                <width>3.2</width>
+            </LineStyle>
+            <PolyStyle>
+                <color>4d0000ff</color>
+            </PolyStyle>
+            <BalloonStyle>
+            </BalloonStyle>
+        </Style>
+    </gx:CascadingStyle>
+    <StyleMap id="__managed_style_F0CDBDCE163C69A26266">
+        <Pair>
+            <key>normal</key>
+            <styleUrl>#__managed_style_1099066BA393C69A26266</styleUrl>
+        </Pair>
+        <Pair>
+            <key>highlight</key>
+            <styleUrl>#__managed_style_05725C17593C69A26267</styleUrl>
+        </Pair>
+    </StyleMap>
+
+    <Folder id="594751BE53000050">
+        <name>PHONE GPS TRAIL</name>
+        <open>1</open>
+        <snippet></snippet>
+        <description>GPS trail data from social media/independent investigation (not from court proceedings)</description>
+        <styleUrl>#__managed_style_0F081E4D1D3C699CD043</styleUrl>
+        <Placemark id="594751BE53000051">
+            <name>PHONE GPS TRAIL - SEGMENT 1</name>
+            <snippet></snippet>
+            <description><![CDATA[<b>Label:</b> Phone GPS Trail<br/>
+<b>Notes:</b> Data from social media/independent investigation<br/>
+<b>Type:</b> GPS<br/>
+<b>Comment:</b> Not from court proceedings]]></description>
+            <styleUrl>#gps-trail-blue</styleUrl>
+            <LineString>
+                <tessellate>1</tessellate>
+                <coordinates>
+                    -88.17480487463762,35.67912272574721,0
+                    -88.17622332460999,35.68106857970469,0
+                    -88.17646106635515,35.68223715869908,0
+                    -88.17654172549716,35.68353511121834,0
+                    -88.17626760614145,35.68447088993079,0
+                    -88.17543299398071,35.6852438652307,0
+                    -88.17461614954182,35.68592453525955,0
+                    -88.17424598448318,35.68663843958364,0
+                    -88.17316522046008,35.68773068360235,0
+                    -88.17423707305218,35.68806578131739,0
+                    -88.17520476332911,35.68842476047531,0
+                    -88.17565345902821,35.68879660348419,0
+                    -88.17575451198633,35.6892116384545,0
+                    -88.17532547369504,35.68992435830322,0
+                    -88.17552214264762,35.69164686334135,0
+                    -88.17575941057605,35.69239112714389,0
+                    -88.17644013133018,35.69296518351965,0
+                    -88.17713584279903,35.69362566982102,0
+                    -88.17725532187002,35.69427524742594,0
+                    -88.17674571491129,35.69527859119238,0
+                    -88.17679521726792,35.69565887679006,0
+                    -88.17767160087121,35.69627361230642,0
+                    -88.17820271392691,35.69632665454698,0
+                    -88.17886909868383,35.69608988478181,0
+                    -88.17978495395695,35.6962307452854,0
+                    -88.18052360684938,35.69602942752463,0
+                    -88.18108842342205,35.6956869320753,0
+                    -88.18179553747221,35.69664673948421,0
+                    -88.18210539121206,35.69736543772483,0
+                    -88.18228228275974,35.6986977536745,0
+                    -88.18280815153979,35.69938902007352,0
+                    -88.18353432676172,35.70030352572108,0
+                    -88.18384979949668,35.70129111727064,0
+                    -88.18427608146563,35.70207355907249,0
+                    -88.18660922692274,35.70352727608702,0
+                    -88.18833123283369,35.70579989366837,0
+                    -88.18834075125254,35.70653221639335,0
+                    -88.18824245245342,35.70718037229361,0
+                    -88.18829145959101,35.70764288828291,0
+                    -88.18954305936897,35.70829498134005,0
+                    -88.19075318815464,35.70889285963839,0
+                    -88.19120373002028,35.70924080234131,0
+                    -88.19216656409046,35.70963627296117,0
+                    -88.1929931232925,35.71020215869875,0
+                    -88.19368885134706,35.71066752898621,0
+                    -88.19443663339055,35.71073659491636,0
+                    -88.19541254430692,35.71069780653554,0
+                    -88.19633322103147,35.71063079270748,0
+                    -88.1979723438223,35.71026997108152,0
+                    -88.19899822291235,35.71000356830792,0
+                    -88.19978636144796,35.71010261733096,0
+                    -88.20025903993877,35.71060362737183,0
+                    -88.20058128088957,35.71155913385378,0
+                    -88.20102676830223,35.71224563036249,0
+                    -88.2009238935954,35.71252029070988,0
+                    -88.20003155330141,35.71266639529679,0
+                    -88.19944153813717,35.71300179831898,0
+                    -88.19898072245989,35.71386977005876,0
+                    -88.19810348593855,35.71457606218438,0
+                    -88.19801953380045,35.71619571771428,0
+                    -88.19791447467382,35.71717969617367,0
+                    -88.197598624181,35.7175230273986,0
+                    -88.19694917043094,35.7178147113111,0
+                    -88.1963071571174,35.71830144781106,0
+                    -88.19555359574377,35.71925061986095,0
+                    -88.19514878817273,35.71988327589093,0
+                    -88.19509500132129,35.72081777096726,0
+                    -88.19510099729921,35.7218489026719,0
+                    -88.19510636347653,35.72287381712059,0
+                    -88.19506872646684,35.72396468944007,0
+                    -88.19503459501138,35.72656497416268,0
+                    -88.19449727176352,35.72642175374133,0
+                    -88.19220581870253,35.72651525720283,0
+                    -88.18989439494948,35.72640866646616,0
+                    -88.18583283867315,35.72639008186776,0
+                    -88.18426634857509,35.72679721246298,0
+                    -88.18041968661915,35.72771957744091,0
+                    -88.18090325153032,35.72838033049728,0
+                    -88.18114267713544,35.72954233033866,0
+                    -88.18142994940439,35.73037390666386,0
+                    -88.18150041818794,35.73122452310599,0
+                    -88.18086341254707,35.7325770411304,0
+                    -88.18006332282187,35.73308083451682,0
+                    -88.17955352398131,35.73324845486992,0
+                    -88.17919711048675,35.73348585955303,0
+                    -88.17916477660044,35.73396222116377,0
+                    -88.17952641072927,35.73521773216942,0
+                    -88.17945685653235,35.73644685158271,0
+                    -88.17940657141476,35.73824885414905,0
+                    -88.17912406716903,35.73885483630178,0
+                    -88.1783103644995,35.7392800862665,0
+                    -88.17785588843839,35.73951945647726,0
+                    -88.17728198490373,35.74008057692669,0
+                    -88.17721684658214,35.74027284700446,0
+                    -88.17723576476928,35.7404260410277,0
+                    -88.17787036852798,35.74050605987858,0
+                    -88.17866576454105,35.7404433803174,0
+                    -88.17960639374404,35.74073021426958,0
+                    -88.17995675907073,35.74111521550021,0
+                    -88.17999035056147,35.74165228669599,0
+                    -88.1799703511133,35.74189270391081,0
+                    -88.18020749489631,35.74256909628841,0
+                    -88.1805979922062,35.74314273760396,0
+                    -88.18185714419033,35.74375991876039,0
+                    -88.18233388293075,35.74396198251223,0
+                    -88.18273855425888,35.74432087083786,0
+                    -88.183278595369,35.74567569827106,0
+                    -88.18384377083235,35.74743025374049,0
+                    -88.18368308993823,35.74871280307864,0
+                    -88.18342558337321,35.74947003309902,0
+                    -88.1835852051853,35.7499186446309,0
+                    -88.1823073676389,35.750826782442,0
+                    -88.1810295300926,35.751734920253,0
+                    -88.17974850060619,35.7526430580641,0
+                    -88.177670364582,35.7543195630783,0
+                    -88.1755922285578,35.7559960680926,0
+                    -88.1735141925336,35.7575725731068,0
+                    -88.1743666933717,35.7583076176933,0
+                    -88.1752191942097,35.7590426622799,0
+                    -88.1760716961478,35.7597777068664,0
+                    -88.178416332373,35.7610215702385,0
+                    -88.18076096859831,35.7622654336105,0
+                    -88.1831055048235,35.7634093013826,0
+                    -88.18427780626941,35.7636688312661,0
+                    -88.1854501077154,35.7639283611496,0
+                    -88.1866224091613,35.7641877910331,0
+                    -88.187847711209,35.763625545298,0
+                    -88.1890730132567,35.763063299563,0
+                    -88.1902983153044,35.7625010538279,0
+                    -88.191164982571,35.7612472563621,0
+                    -88.1920316498377,35.7599934588964,0
+                    -88.19285671723389,35.7587396614306,0
+                    -88.1922704167917,35.7569234938669,0
+                    -88.19168411634961,35.7551073263032,0
+                    -88.1910978159074,35.7532911587395,0
+                    -88.1917371169513,35.7522102443048,0
+                    -88.19237641799531,35.7511293298701,0
+                    -88.1930157190392,35.7500484154354,0
+                    -88.1929627184406,35.7482753093388,0
+                    -88.1929097178419,35.7465022032421,0
+                    -88.19285671723389,35.7447290971456,0
+                    -88.1918443159086,35.7429128528914,0
+                    -88.1908319145833,35.7410966086371,0
+                    -88.1898195132579,35.7392803643829,0
+                    -88.188647211812,35.7375502840452,0
+                    -88.18747491036601,35.7358202037074,0
+                    -88.1863026089201,35.7340901233697,0
+                    -88.1863026089201,35.7333519246787,0
+                    -88.1863026089201,35.7326137259878,0
+                    -88.1863026089201,35.7318755272968,0
+                    -88.1856100078359,35.7304943575932,0
+                    -88.18491740675179,35.7291131878895,0
+                    -88.18428908406121,35.72680644480401,0
+                </coordinates>
+            </LineString>
+        </Placemark>
+        <Placemark id="594751BE53000052">
+            <name>PHONE GPS TRAIL - SEGMENT 2</name>
+            <snippet></snippet>
+            <description><![CDATA[<b>Label:</b> Phone GPS Trail<br/>
+<b>Notes:</b> Data from social media/independent investigation<br/>
+<b>Type:</b> GPS<br/>
+<b>Comment:</b> Not from court proceedings]]></description>
+            <styleUrl>#gps-trail-blue</styleUrl>
+            <LineString>
+                <tessellate>1</tessellate>
+                <coordinates>
+                    -88.17457246331854,35.75695518038381,0
+                    -88.1767625006014,35.7803317155074,0
+                    -88.1775107972332,35.7898656595231,0
+                    -88.17623159626839,35.8017933206641,0
+                    -88.1775107972332,35.8065901108459,0
+                    -88.1760716961478,35.8085345351628,0
+                    -88.17575279422191,35.8179973518636,0
+                    -88.176391496389,35.8207194328959,0
+                    -88.15337306554549,35.8202008097229,0
+                    -88.14969715940239,35.8187753069453,0
+                    -88.13518784489439,35.82114210316376,0
+                    -88.13400545899286,35.82100437038566,0
+                    -88.13284008581162,35.82030047582081,0
+                    -88.13210019295134,35.81958971194211,0
+                    -88.13166573575587,35.81893146284337,0
+                    -88.13097480660784,35.81826792226695,0
+                    -88.1297386616162,35.81774060324685,0
+                    -88.12862189401839,35.81739473720457,0
+                    -88.12810720183208,35.81710108206066,0
+                    -88.12720857372173,35.81605923759439,0
+                    -88.12662643034493,35.81551671511366,0
+                    -88.12572734258219,35.81409503830729,0
+                    -88.12548531786567,35.81329454650108,0
+                    -88.12488686291107,35.8124486789248,0
+                    -88.12444131440448,35.81202518345886,0
+                    -88.12358646820827,35.81143717759245,0
+                    -88.12311302907231,35.81117761174538,0
+                    -88.12318167979126,35.81076112801613,0
+                    -88.12270509954624,35.80868275319081,0
+                    -88.12105188962367,35.80658318820969,0
+                    -88.12076541429312,35.80600044293916,0
+                    -88.12131404447395,35.80579129019713,0
+                    -88.12202566639361,35.80571395874483,0
+                    -88.12305503108688,35.80560709471656,0
+                    -88.12391030575685,35.80471228885595,0
+                    -88.12486577361686,35.80383426343674,0
+                    -88.12654689105898,35.80111784354105,0
+                    -88.12729375095962,35.8007921479932,0
+                    -88.12773231162544,35.79996632126402,0
+                    -88.12757441521138,35.79861585034786,0
+                    -88.12873044374146,35.79722627867141,0
+                    -88.12759880687396,35.79652340075614,0
+                    -88.12617880375002,35.79625140223341,0
+                    -88.12511496846368,35.79474384705846,0
+                    -88.12245450810921,35.79317447833883,0
+                    -88.12132704166162,35.79218077395485,0
+                    -88.12094055985621,35.79124200112786,0
+                    -88.11989719239001,35.78985122178642,0
+                    -88.11811900322408,35.78899330121717,0
+                    -88.11629466574017,35.78819458932492,0
+                    -88.1137650720994,35.78852981752076,0
+                    -88.11142292817196,35.78898001789243,0
+                    -88.11004720517757,35.78892019813326,0
+                    -88.10990220242067,35.78817659143933,0
+                    -88.10956719892553,35.78702442615508,0
+                    -88.10906425712973,35.78641234380028,0
+                    -88.10742956758415,35.78620819747045,0
+                    -88.10621530190426,35.78508693753521,0
+                    -88.10470814973695,35.78447581380481,0
+                    -88.10303332398408,35.7836944852497,0
+                    -88.10300286583831,35.78112682930493,0
+                    -88.10155242831783,35.77961475731126,0
+                    -88.09994808175334,35.77839590813074,0
+                    -88.09962176924064,35.77817996216551,0
+                    -88.09931132860083,35.77784014815028,0
+                    -88.09870307339084,35.77619288476104,0
+                    -88.09781165159647,35.7752326377849,0
+                    -88.0973784647001,35.77485398091243,0
+                    -88.097026739882,35.77437096751726,0
+                    -88.09868154114947,35.76974135874763,0
+                    -88.09966757308599,35.76946619807622,0
+                    -88.10196201925946,35.76764480749974,0
+                    -88.10307560238279,35.76646605204346,0
+                    -88.10383507429506,35.76635333714471,0
+                    -88.10454505990239,35.76639005605018,0
+                    -88.10688995620396,35.76636625078351,0
+                    -88.1069253810187,35.76576892994204,0
+                    -88.10734690085228,35.76464151597629,0
+                    -88.10739780415312,35.76308074949474,0
+                    -88.10537012407345,35.76012000633216,0
+                    -88.10563631932632,35.75572773225227,0
+                    -88.10895133585205,35.75533633385721,0
+                    -88.11077462705012,35.75695352283559,0
+                    -88.11181767157638,35.75634369864152,0
+                    -88.11355535233621,35.75513904854934,0
+                    -88.11516385858965,35.75502641855569,0
+                    -88.11600597433394,35.75504842687158,0
+                    -88.11769447211454,35.7542704192666,0
+                    -88.1185611199067,35.75406804846129,0
+                    -88.11933602477221,35.75400884183983,0
+                    -88.12097756663761,35.75374724211174,0
+                    -88.12212555235868,35.75358529758145,0
+                    -88.12285884353815,35.75341412750078,0
+                    -88.12311709198288,35.75321192905723,0
+                    -88.12309556277367,35.75288803453356,0
+                    -88.12295104723465,35.75223094570293,0
+                    -88.1227847032653,35.75121330872439,0
+                    -88.12257858782205,35.75022658593235,0
+                    -88.12244319217558,35.74926514128766,0
+                    -88.12244839204043,35.74890349543003,0
+                    -88.12248581915949,35.74856005633232,0
+                    -88.12268079083411,35.74781355803353,0
+                    -88.12316380510343,35.74632647337691,0
+                    -88.12418220360631,35.74336247317966,0
+                    -88.12458496325782,35.74166742473613,0
+                    -88.12471409711216,35.74074592579498,0
+                    -88.12493121025371,35.73983980307828,0
+                    -88.1248756102375,35.73957431128515,0
+                    -88.12475106325496,35.73929757002715,0
+                    -88.12469198485762,35.73904759636753,0
+                    -88.12464882908148,35.7388179615474,0
+                    -88.12465286634584,35.73860994657485,0
+                    -88.12468000302678,35.73840429736406,0
+                    -88.12479500210559,35.73810702379404,0
+                    -88.12501003635982,35.73777333210509,0
+                    -88.1279311199134,35.73473666637067,0
+                    -88.12800753567927,35.73441547850076,0
+                    -88.1280572791658,35.73402980524131,0
+                    -88.12819706930303,35.73371191273984,0
+                    -88.12847573903632,35.73349708228346,0
+                    -88.12877375136955,35.73342498800683,0
+                    -88.13148865245235,35.73301194276848,0
+                    -88.13297762352599,35.73253476884833,0
+                    -88.13761566215321,35.73069569712411,0
+                    -88.13704394368077,35.72912806712963,0
+                    -88.1355888743721,35.72695067587112,0
+                    -88.13541699901596,35.72533139390795,0
+                    -88.13566044056809,35.72388390168666,0
+                    -88.13722723275085,35.71255618659165,0
+                    -88.13752693968593,35.71189590670853,0
+                    -88.13875519295921,35.71028718591079,0
+                    -88.13927805912226,35.70979235702121,0
+                    -88.14064555725626,35.70908907908954,0
+                    -88.14143464869584,35.70871872022482,0
+                    -88.14186723299379,35.7082757796492,0
+                    -88.14299580126833,35.70673001823462,0
+                    -88.1436699589551,35.70616472990918,0
+                    -88.14390212750379,35.7064145530503,0
+                </coordinates>
+            </LineString>
+        </Placemark>
+    </Folder>
+
+    <Folder>
+      <name>USER MARKERS</name>
+      <open>1</open>
+      <Placemark id="01BCF57D9C3C7BCA7250">
+        <name>Marker: 1</name>
+        <description><![CDATA[<b>BOBO RESIDENCE</b><br/>Cell phone departs near 8:00 AM]]></description>
+        <LookAt>
+            <longitude>-88.17334553846506</longitude>
+            <latitude>35.68535548450795</latitude>
+            <altitude>164.0876489260644</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>35</gx:fovy>
+            <range>2697.16462888231</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.17468256470195,35.67957104790676,150.9756501017069</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="031C4B518A3C7BCB9A67">
+        <name>Marker: 2</name>
+        <description><![CDATA[Near Hickory Forks (along route from Bobo Residence)]]></description>
+        <LookAt>
+            <longitude>-88.17440403379503</longitude>
+            <latitude>35.68775932069962</latitude>
+            <altitude>170.8553247280029</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>35</gx:fovy>
+            <range>2278.071541937243</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.17319743531294,35.68774607159152,168.5039928485322</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="0EF0C4E64F3C7BD127E4">
+        <name>Marker: 3</name>
+        <description><![CDATA[Near Bible Hill (along route)]]></description>
+        <LookAt>
+            <longitude>-88.1808987823396</longitude>
+            <latitude>35.7024636471826</latitude>
+            <altitude>136.0435741557897</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>35</gx:fovy>
+            <range>9528.474267100686</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.18762616368851,35.70497416660351,162.8510670252564</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="0FF38FE7663C7BD15BAC">
+        <name>Marker: 4</name>
+        <description><![CDATA[Along route heading north]]></description>
+        <LookAt>
+            <longitude>-88.1808987823396</longitude>
+            <latitude>35.7024636471826</latitude>
+            <altitude>136.0435741557897</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>35</gx:fovy>
+            <range>9528.474267100686</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.19941198215578,35.71310860227051,166.2110899244931</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="038AAFAE283C7BD2B9BE">
+        <name>Marker: 5</name>
+        <description><![CDATA[Along route in Henderson County area]]></description>
+        <LookAt>
+            <longitude>-88.16841636084428</longitude>
+            <latitude>35.72505254749008</latitude>
+            <altitude>153.140458298115</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>35</gx:fovy>
+            <range>15514.00215398753</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.18426871481074,35.72676903491552,125.2541199789305</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="099B92AAA63C96771D9B">
+        <name>Marker: 6</name>
+        <description><![CDATA[<b>Cell phone 8:11 AM</b><br/>Approximate location of telephone at 8:11 AM reading CR 1253 Section 1]]></description>
+        <LookAt>
+            <longitude>-88.18718000018693</longitude>
+            <latitude>35.76232873424875</latitude>
+            <altitude>153.266773018935</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99999999840422</gx:fovy>
+            <range>1533.848004824395</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.19034415007265,35.76346036385862,146.6802264637607</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="0B676F63603C967752A8">
+        <name>Marker: 7</name>
+        <description><![CDATA[Near marker 6 (along route)]]></description>
+        <LookAt>
+            <longitude>-88.18179375001813</longitude>
+            <latitude>35.76137520167531</latitude>
+            <altitude>138.9873210682663</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99999999840422</gx:fovy>
+            <range>3218.640959872864</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.18208785460166,35.76142032856535,139.2368057394434</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="02789FE0BA3C96782A76">
+        <name>Marker: 8</name>
+        <description><![CDATA[<b>Creek Gooch Road</b><br/>Location of cell phone at 9:25 AM Reading CR 1257 Section 3.<br/>Creek location of Lunch Box and Notebook]]></description>
+        <LookAt>
+            <longitude>-88.18128431983224</longitude>
+            <latitude>35.76517046015908</latitude>
+            <altitude>143.8100585677374</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99999999840422</gx:fovy>
+            <range>7955.941272868076</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.17459209850702,35.75837617082156,141.3463389729758</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="031BAB31A63C9678FA2C">
+        <name>Marker: 9</name>
+        <description><![CDATA[<b>Natchez Trace State area</b><br/>In Area for 30 minutes. Reading CR 1096 Section 1.<br/>Direction of travel, in area of CR 1096 Section 1]]></description>
+        <LookAt>
+            <longitude>-88.17699714844329</longitude>
+            <latitude>35.81038621470709</latitude>
+            <altitude>159.3281063254059</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99999999840422</gx:fovy>
+            <range>3421.615912243724</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.17622718934162,35.81284410880323,167.7724085553477</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="02F44B02723C96792E66">
+        <name>Marker: 12</name>
+        <description><![CDATA[Near location marked "09/05/2014 Location of Holly Bobo's Remains"]]></description>
+        <LookAt>
+            <longitude>-88.15096487522831</longitude>
+            <latitude>35.81809753916526</latitude>
+            <altitude>188.1600483792622</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99999999840422</gx:fovy>
+            <range>1257.910433220968</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_044B21CBED3C9646C743</styleUrl>
+        <Point>
+            <coordinates>-88.15162639133335,35.81819241236914,189.3837537330263</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="0B01BE9E9E3C969BAD0B">
+        <name>Marker: 13</name>
+        <description><![CDATA[<b>Cell phone at 9:06 AM</b><br/>Approximate location of cell phone at 9:06 AM reading CR 3152 Section 3]]></description>
+        <LookAt>
+            <longitude>-88.13491657535741</longitude>
+            <latitude>35.81356615695968</latitude>
+            <altitude>174.7999885490949</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99950121373043</gx:fovy>
+            <range>6886.23609860195</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_07DAFE461A3C967DC0A6</styleUrl>
+        <Point>
+            <coordinates>-88.13629720440629,35.82094274393113,176.4107708068146</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="0F3799F0223C969D4EF4">
+        <name>Marker: 14</name>
+        <description><![CDATA[<b>Shiloh Road Cell Tower</b><br/>Cell Tower CR 1096. Holly Bobo's Cell phone was in Section 1 of this tower between 8:26 AM and 8:56 AM on 04/13/2011]]></description>
+        <LookAt>
+            <longitude>-88.12375175146671</longitude>
+            <latitude>35.80351113924412</latitude>
+            <altitude>146.165274336093</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99950121373043</gx:fovy>
+            <range>4696.911955454852</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_0D5065F3083C969D7DB4</styleUrl>
+        <Point>
+            <coordinates>-88.1216288597432,35.80728968907157,165.5330825308817</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="07CD7EAD613C9687A234">
+        <name>Marker: 15</name>
+        <description><![CDATA[In Benton County/Tennessee area (along route)]]></description>
+        <LookAt>
+            <longitude>-88.10578204696932</longitude>
+            <latitude>35.7647338365748</latitude>
+            <altitude>125.6350996237997</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99999999840421</gx:fovy>
+            <range>24789.09445478814</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_07DAFE461A3C967DC0A6</styleUrl>
+        <Point>
+            <coordinates>-88.09710182389816,35.77457859793156,166.5473772827619</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="093D2CCCD93C9687D2DB">
+        <name>Marker: 16</name>
+        <description><![CDATA[<b>Cell phone at 9:02 AM</b><br/>Approximate location of cell telephone at 9:02 AM reading CR 3152 Section 3]]></description>
+        <LookAt>
+            <longitude>-88.10430899713516</longitude>
+            <latitude>35.76545091633724</latitude>
+            <altitude>124.7337967764681</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99999999840421</gx:fovy>
+            <range>17783.69953656569</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_07DAFE461A3C967DC0A6</styleUrl>
+        <Point>
+            <coordinates>-88.10125775131084,35.76810792482978,164.8132330375797</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="0D61B6DBDB3C9688EBD0">
+        <name>Marker: 17</name>
+        <description><![CDATA[<b>Cell phone at 9:10 AM</b><br/>Approximate location of cell phone at 9:10 AM reading CR 3152 Section 2]]></description>
+        <LookAt>
+            <longitude>-88.10854401122847</longitude>
+            <latitude>35.75847416398055</latitude>
+            <altitude>154.7119758790375</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99950121373043</gx:fovy>
+            <range>9492.163683681285</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_07DAFE461A3C967DC0A6</styleUrl>
+        <Point>
+            <coordinates>-88.10748818550906,35.76375271451452,129.1867488966287</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="07BE28E3D03C9689601F">
+        <name>Marker: 18</name>
+        <description><![CDATA[Along route near marker 17]]></description>
+        <LookAt>
+            <longitude>-88.10854401122847</longitude>
+            <latitude>35.75847416398055</latitude>
+            <altitude>154.7119758790375</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99950121373043</gx:fovy>
+            <range>9492.163683681285</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_07DAFE461A3C967DC0A6</styleUrl>
+        <Point>
+            <coordinates>-88.11285203277373,35.75566625409945,166.5332189015846</coordinates>
+        </Point>
+      </Placemark>
+      <Placemark id="01BF40C97E3C9689E2B3">
+        <name>Marker: 19</name>
+        <description><![CDATA[Near Jeannette (along route)]]></description>
+        <LookAt>
+            <longitude>-88.1181114116791</longitude>
+            <latitude>35.75662585115257</latitude>
+            <altitude>159.9157804458195</altitude>
+            <heading>0</heading>
+            <tilt>0</tilt>
+            <gx:fovy>34.99950121373043</gx:fovy>
+            <range>13956.20047106641</range>
+            <altitudeMode>absolute</altitudeMode>
+        </LookAt>
+        <styleUrl>#__managed_style_07DAFE461A3C967DC0A6</styleUrl>
+        <Point>
+            <coordinates>-88.12391146138695,35.74392349906569,140.1701025451516</coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+
+  </Document>
+</kml>
