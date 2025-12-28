@@ -398,7 +398,7 @@
 
     <!-- Sector arm/wing style (for the line extending from tower to sector) -->
     <Style id="sector-arm">
-      <LineStyle><color>ff000000</color><width>2</width></LineStyle>
+      <LineStyle><color>ff000000</color><width>4</width></LineStyle>
     </Style>
 
     <!-- GPS Phone Trail Style - bright blue -->
@@ -1234,111 +1234,111 @@
           <name>SECTOR A</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector A Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.0894732,35.8449259,0 -88.0894732,35.8719259,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector A Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 0°–120°]]></description>
             <styleUrl>#sector-a</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.0894732,35.8449259,0
-                -88.0894732,35.8719259,0
-                -88.0837732,35.8715619,0
-                -88.0781732,35.8703619,0
-                -88.0728732,35.8682619,0
-                -88.0682732,35.8655619,0
-                -88.0641732,35.8622619,0
-                -88.0608732,35.8584259,0
-                -88.0584732,35.8541259,0
-                -88.0569732,35.8496259,0
-                -88.0561732,35.8449259,0
-                -88.0569732,35.8402259,0
-                -88.0584732,35.8357259,0
-                -88.0608732,35.8314259,0
+                -88.0894732,35.8674169,0
+                -88.0847251,35.867113688,0
+                -88.0800603,35.866114087999996,0
+                -88.0756454,35.864364788,0
+                -88.0718136,35.862115688,0
+                -88.0683983,35.859366788,0
+                -88.0656494,35.8561714,0
+                -88.0636502,35.8525895,0
+                -88.0624007,35.848841,0
+                -88.0617343,35.8449259,0
+                -88.0624007,35.8410108,0
+                -88.0636502,35.8372623,0
+                -88.0656494,35.8336804,0
                 -88.0894732,35.8449259,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0894732,35.8449259,0 -88.0894732,35.8759759,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR B</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector B Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.0894732,35.8449259,0 -88.0608732,35.8314259,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector B Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 120°–240°]]></description>
             <styleUrl>#sector-b</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.0894732,35.8449259,0
-                -88.0608732,35.8314259,0
-                -88.0641732,35.8275899,0
-                -88.0682732,35.8242899,0
-                -88.0728732,35.8215619,0
-                -88.0781732,35.8194899,0
-                -88.0837732,35.8182619,0
-                -88.0894732,35.8179259,0
-                -88.0951732,35.8182619,0
-                -88.1007732,35.8194899,0
-                -88.1060732,35.8215619,0
-                -88.1106732,35.8242899,0
-                -88.1147732,35.8275899,0
-                -88.1180732,35.8314259,0
+                -88.0656494,35.8336804,0
+                -88.0683983,35.830485012,0
+                -88.0718136,35.827736112,0
+                -88.0756454,35.825463688,0
+                -88.0800603,35.823737712,0
+                -88.0847251,35.822714788000006,0
+                -88.0894732,35.8224349,0
+                -88.0942213,35.822714788000006,0
+                -88.0988861,35.823737712,0
+                -88.103301,35.825463688,0
+                -88.10713279999999,35.827736112,0
+                -88.1105481,35.830485012,0
+                -88.113297,35.8336804,0
                 -88.0894732,35.8449259,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0894732,35.8449259,0 -88.0565832,35.829400899999996,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR C</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector C Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.0894732,35.8449259,0 -88.1180732,35.8314259,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector C Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 240°–360°]]></description>
             <styleUrl>#sector-c</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.0894732,35.8449259,0
-                -88.1180732,35.8314259,0
-                -88.1204732,35.8357259,0
-                -88.1219732,35.8402259,0
-                -88.1227732,35.8449259,0
-                -88.1219732,35.8496259,0
-                -88.1204732,35.8541259,0
-                -88.1180732,35.8584259,0
-                -88.1147732,35.8622619,0
-                -88.1106732,35.8655619,0
-                -88.1060732,35.8682619,0
-                -88.1007732,35.8703619,0
-                -88.0951732,35.8715619,0
-                -88.0894732,35.8719259,0
+                -88.113297,35.8336804,0
+                -88.1152962,35.8372623,0
+                -88.1165457,35.8410108,0
+                -88.1172121,35.8449259,0
+                -88.1165457,35.848841,0
+                -88.1152962,35.8525895,0
+                -88.113297,35.8561714,0
+                -88.1105481,35.859366788,0
+                -88.10713279999999,35.862115688,0
+                -88.103301,35.864364788,0
+                -88.0988861,35.866114087999996,0
+                -88.0942213,35.867113688,0
+                -88.0894732,35.8674169,0
                 -88.0894732,35.8449259,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0894732,35.8449259,0 -88.1223632,35.829400899999996,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
       </Folder>
@@ -1360,111 +1360,111 @@
           <name>SECTOR A</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector A Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.2741621,35.6383075,0 -88.2741621,35.6653075,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector A Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 0°–120°]]></description>
             <styleUrl>#sector-a</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.2741621,35.6383075,0
-                -88.2741621,35.6653075,0
-                -88.2684621,35.6649435,0
-                -88.2628621,35.6637435,0
-                -88.2575621,35.6616435,0
-                -88.2529621,35.6589435,0
-                -88.2488621,35.6556435,0
-                -88.2455621,35.6518075,0
-                -88.2431621,35.6475075,0
-                -88.2416621,35.6430075,0
-                -88.2408621,35.6383075,0
-                -88.2416621,35.6336075,0
-                -88.2431621,35.6291075,0
-                -88.2455621,35.6248075,0
+                -88.2741621,35.6607985,0
+                -88.269414,35.660495288,0
+                -88.26474920000001,35.659495688,0
+                -88.2603343,35.657746388,0
+                -88.25650250000001,35.655497288,0
+                -88.2530872,35.652748388,0
+                -88.2503383,35.649553,0
+                -88.24833910000001,35.645971100000004,0
+                -88.2470896,35.642222600000004,0
+                -88.2464232,35.6383075,0
+                -88.2470896,35.634392399999996,0
+                -88.24833910000001,35.6306439,0
+                -88.2503383,35.627062,0
                 -88.2741621,35.6383075,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2741621,35.6383075,0 -88.2741621,35.6693575,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR B</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector B Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.2741621,35.6383075,0 -88.2455621,35.6248075,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector B Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 120°–240°]]></description>
             <styleUrl>#sector-b</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.2741621,35.6383075,0
-                -88.2455621,35.6248075,0
-                -88.2488621,35.6209715,0
-                -88.2529621,35.6176715,0
-                -88.2575621,35.6149435,0
-                -88.2628621,35.6128715,0
-                -88.2684621,35.6116435,0
-                -88.2741621,35.6113075,0
-                -88.2798621,35.6116435,0
-                -88.2854621,35.6128715,0
-                -88.2907621,35.6149435,0
-                -88.2953621,35.6176715,0
-                -88.2994621,35.6209715,0
-                -88.3027621,35.6248075,0
+                -88.2503383,35.627062,0
+                -88.2530872,35.623866612,0
+                -88.25650250000001,35.621117712,0
+                -88.2603343,35.618845288,0
+                -88.26474920000001,35.617119312,0
+                -88.269414,35.616096388,0
+                -88.2741621,35.6158165,0
+                -88.2789102,35.616096388,0
+                -88.283575,35.617119312,0
+                -88.2879899,35.618845288,0
+                -88.2918217,35.621117712,0
+                -88.295237,35.623866612,0
+                -88.2979859,35.627062,0
                 -88.2741621,35.6383075,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2741621,35.6383075,0 -88.2412721,35.6227825,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR C</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector C Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.2741621,35.6383075,0 -88.3027621,35.6248075,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector C Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 240°–360°]]></description>
             <styleUrl>#sector-c</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.2741621,35.6383075,0
-                -88.3027621,35.6248075,0
-                -88.3051621,35.6291075,0
-                -88.3066621,35.6336075,0
-                -88.3074621,35.6383075,0
-                -88.3066621,35.6430075,0
-                -88.3051621,35.6475075,0
-                -88.3027621,35.6518075,0
-                -88.2994621,35.6556435,0
-                -88.2953621,35.6589435,0
-                -88.2907621,35.6616435,0
-                -88.2854621,35.6637435,0
-                -88.2798621,35.6649435,0
-                -88.2741621,35.6653075,0
+                -88.2979859,35.627062,0
+                -88.2999851,35.6306439,0
+                -88.3012346,35.634392399999996,0
+                -88.301901,35.6383075,0
+                -88.3012346,35.642222600000004,0
+                -88.2999851,35.645971100000004,0
+                -88.2979859,35.649553,0
+                -88.295237,35.652748388,0
+                -88.2918217,35.655497288,0
+                -88.2879899,35.657746388,0
+                -88.283575,35.659495688,0
+                -88.2789102,35.660495288,0
+                -88.2741621,35.6607985,0
                 -88.2741621,35.6383075,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2741621,35.6383075,0 -88.30705209999999,35.6227825,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
       </Folder>
@@ -1486,111 +1486,111 @@
           <name>SECTOR A</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector A Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.121126,35.6675014,0 -88.121126,35.6945014,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector A Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 0°–120°]]></description>
             <styleUrl>#sector-a</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.121126,35.6675014,0
-                -88.121126,35.6945014,0
-                -88.115426,35.6941374,0
-                -88.109826,35.6929374,0
-                -88.104526,35.6908374,0
-                -88.099926,35.6881374,0
-                -88.095526,35.6848374,0
-                -88.092526,35.6810014,0
-                -88.090126,35.6767014,0
-                -88.088526,35.6722014,0
-                -88.087726,35.6675014,0
-                -88.088526,35.6628014,0
-                -88.090126,35.6583014,0
-                -88.092526,35.6540014,0
+                -88.121126,35.6899924,0
+                -88.1163779,35.689689188,0
+                -88.1117131,35.688689587999995,0
+                -88.1072982,35.686940288,0
+                -88.1034664,35.684691188,0
+                -88.0998012,35.681942288,0
+                -88.0973022,35.6787469,0
+                -88.095303,35.675165,0
+                -88.0939702,35.6714165,0
+                -88.0933038,35.6675014,0
+                -88.0939702,35.6635863,0
+                -88.095303,35.6598378,0
+                -88.0973022,35.6562559,0
                 -88.121126,35.6675014,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.121126,35.6675014,0 -88.121126,35.6985514,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR B</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector B Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.121126,35.6675014,0 -88.092526,35.6540014,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector B Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 120°–240°]]></description>
             <styleUrl>#sector-b</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.121126,35.6675014,0
-                -88.092526,35.6540014,0
-                -88.095526,35.6501654,0
-                -88.099926,35.6468654,0
-                -88.104526,35.6441374,0
-                -88.109826,35.6420654,0
-                -88.115426,35.6408374,0
-                -88.121126,35.6405014,0
-                -88.126826,35.6408374,0
-                -88.132426,35.6420654,0
-                -88.137726,35.6441374,0
-                -88.142326,35.6468654,0
-                -88.146726,35.6501654,0
-                -88.149726,35.6540014,0
+                -88.0973022,35.6562559,0
+                -88.0998012,35.653060511999996,0
+                -88.1034664,35.650311612,0
+                -88.1072982,35.648039188,0
+                -88.1117131,35.646313212,0
+                -88.1163779,35.645290288000005,0
+                -88.121126,35.6450104,0
+                -88.12587409999999,35.645290288000005,0
+                -88.13053889999999,35.646313212,0
+                -88.1349538,35.648039188,0
+                -88.13878559999999,35.650311612,0
+                -88.1424508,35.653060511999996,0
+                -88.1449498,35.6562559,0
                 -88.121126,35.6675014,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.121126,35.6675014,0 -88.08823600000001,35.651976399999995,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR C</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector C Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.121126,35.6675014,0 -88.149726,35.6540014,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector C Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 240°–360°]]></description>
             <styleUrl>#sector-c</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.121126,35.6675014,0
-                -88.149726,35.6540014,0
-                -88.151726,35.6583014,0
-                -88.153726,35.6628014,0
-                -88.154526,35.6675014,0
-                -88.153726,35.6722014,0
-                -88.151726,35.6767014,0
-                -88.149726,35.6810014,0
-                -88.146726,35.6848374,0
-                -88.142326,35.6881374,0
-                -88.137726,35.6908374,0
-                -88.132426,35.6929374,0
-                -88.126826,35.6941374,0
-                -88.121126,35.6945014,0
+                -88.1449498,35.6562559,0
+                -88.14661579999999,35.6598378,0
+                -88.1482818,35.6635863,0
+                -88.1489482,35.6675014,0
+                -88.1482818,35.6714165,0
+                -88.14661579999999,35.675165,0
+                -88.1449498,35.6787469,0
+                -88.1424508,35.681942288,0
+                -88.13878559999999,35.684691188,0
+                -88.1349538,35.686940288,0
+                -88.13053889999999,35.688689587999995,0
+                -88.12587409999999,35.689689188,0
+                -88.121126,35.6899924,0
                 -88.121126,35.6675014,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.121126,35.6675014,0 -88.154016,35.651976399999995,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
       </Folder>
@@ -1612,111 +1612,111 @@
           <name>SECTOR A</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector A Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.2058356,35.8160145,0 -88.2058356,35.8430145,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector A Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 0°–120°]]></description>
             <styleUrl>#sector-a</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.2058356,35.8160145,0
-                -88.2058356,35.8430145,0
-                -88.200136,35.8426505,0
-                -88.194536,35.8414505,0
-                -88.189236,35.8393505,0
-                -88.184636,35.8366505,0
-                -88.180236,35.8333505,0
-                -88.177236,35.8295145,0
-                -88.174836,35.8252145,0
-                -88.173236,35.8207145,0
-                -88.172436,35.8160145,0
-                -88.173236,35.8113145,0
-                -88.174836,35.8068145,0
-                -88.177236,35.8025145,0
+                -88.2058356,35.838505500000004,0
+                -88.2010878332,35.838202288,0
+                -88.1964230332,35.837202688,0
+                -88.19200813319999,35.835453388000005,0
+                -88.1881763332,35.833204288,0
+                -88.18451113319999,35.830455388000004,0
+                -88.18201213319999,35.82726,0
+                -88.1800129332,35.8236781,0
+                -88.1786801332,35.8199296,0
+                -88.1780137332,35.8160145,0
+                -88.1786801332,35.8120994,0
+                -88.1800129332,35.8083509,0
+                -88.18201213319999,35.804769,0
                 -88.2058356,35.8160145,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2058356,35.8160145,0 -88.2058356,35.8470645,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR B</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector B Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.2058356,35.8160145,0 -88.177236,35.8025145,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector B Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 120°–240°]]></description>
             <styleUrl>#sector-b</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.2058356,35.8160145,0
-                -88.177236,35.8025145,0
-                -88.180236,35.7986785,0
-                -88.184636,35.7953785,0
-                -88.189236,35.7926505,0
-                -88.194536,35.7905785,0
-                -88.200136,35.7893505,0
-                -88.2058356,35.7890145,0
-                -88.211536,35.7893505,0
-                -88.217136,35.7905785,0
-                -88.222436,35.7926505,0
-                -88.227036,35.7953785,0
-                -88.231436,35.7986785,0
-                -88.234436,35.8025145,0
+                -88.18201213319999,35.804769,0
+                -88.18451113319999,35.801573612,0
+                -88.1881763332,35.798824712,0
+                -88.19200813319999,35.796552288,0
+                -88.1964230332,35.794826312000005,0
+                -88.2010878332,35.793803388,0
+                -88.2058356,35.7935235,0
+                -88.21058403319999,35.793803388,0
+                -88.2152488332,35.794826312000005,0
+                -88.21966373320001,35.796552288,0
+                -88.2234955332,35.798824712,0
+                -88.22716073320001,35.801573612,0
+                -88.22965973320001,35.804769,0
                 -88.2058356,35.8160145,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2058356,35.8160145,0 -88.17294605999999,35.8004895,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR C</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector C Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.2058356,35.8160145,0 -88.234436,35.8025145,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector C Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 240°–360°]]></description>
             <styleUrl>#sector-c</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.2058356,35.8160145,0
-                -88.234436,35.8025145,0
-                -88.236436,35.8068145,0
-                -88.238436,35.8113145,0
-                -88.239236,35.8160145,0
-                -88.238436,35.8207145,0
-                -88.236436,35.8252145,0
-                -88.234436,35.8295145,0
-                -88.231436,35.8333505,0
-                -88.227036,35.8366505,0
-                -88.222436,35.8393505,0
-                -88.217136,35.8414505,0
-                -88.211536,35.8426505,0
-                -88.2058356,35.8430145,0
+                -88.22965973320001,35.804769,0
+                -88.2313257332,35.8083509,0
+                -88.2329917332,35.8120994,0
+                -88.23365813320001,35.8160145,0
+                -88.2329917332,35.8199296,0
+                -88.2313257332,35.8236781,0
+                -88.22965973320001,35.82726,0
+                -88.22716073320001,35.830455388000004,0
+                -88.2234955332,35.833204288,0
+                -88.21966373320001,35.835453388000005,0
+                -88.2152488332,35.837202688,0
+                -88.21058403319999,35.838202288,0
+                -88.2058356,35.838505500000004,0
                 -88.2058356,35.8160145,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.2058356,35.8160145,0 -88.23872606,35.8004895,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
       </Folder>
@@ -1739,118 +1739,111 @@
           <name>SECTOR A</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector A Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.0379963,36.0160773,0 -88.0379963,36.0430773,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector A Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 0°–120°]]></description>
             <styleUrl>#sector-a</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.0379963,36.0160773,0
-                -88.0379963,36.0430773,0
-                -88.0328963,36.0419273,0
-                -88.0280963,36.0398273,0
-                -88.0237963,36.0368773,0
-                -88.0201963,36.0332773,0
-                -88.0174963,36.0291773,0
-                -88.0157963,36.0247773,0
-                -88.0150963,36.0203773,0
-                -88.0153963,36.0160773,0
-                -88.0166963,36.0119773,0
-                -88.0188963,36.0082773,0
-                -88.0218963,36.0050773,0
-                -88.0256963,36.0025773,0
+                -88.05191882335247,36.035582376661814,0
+                -88.04751986686493,36.037241548215896,0
+                -88.04283154161736,36.03825765479757,0
+                -88.0379963,36.03859982252252,0
+                -88.03316105838265,36.03825765479757,0
+                -88.02847273313508,36.037241548215896,0
+                -88.02407377664754,36.035582376661814,0
+                -88.02009784898694,36.0333305532234,0
+                -88.01666575670332,36.030554498416365,0
+                -88.01388178218399,36.02733856126126,0
+                -88.01183051508596,36.02378045638121,0
+                -88.01057428212202,36.019988294992494,0
+                -88.01015125329509,36.0160773,0
                 -88.0379963,36.0160773,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0379963,36.0160773,0 -88.02184617291115,36.0387031889277,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR B</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector B Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.0379963,36.0160773,0 -88.0094163,36.0025773,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector B Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 120°–240°]]></description>
             <styleUrl>#sector-b</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.0379963,36.0160773,0
-                -88.0256963,36.0025773,0
-                -88.0299963,36.0006773,0
-                -88.0347963,35.9996773,0
-                -88.0379963,35.9890773,0
-                -88.0432963,35.9896773,0
-                -88.0482963,35.9911773,0
-                -88.0527963,35.9935773,0
-                -88.0566963,35.9968773,0
-                -88.0596963,36.0007773,0
-                -88.0617963,36.0050773,0
-                -88.0628963,36.0097773,0
-                -88.0629963,36.0145773,0
-                -88.0620963,36.0192773,0
-                -88.0601963,36.0236773,0
-                -88.0573963,36.0274773,0
-                -88.0537963,36.0305773,0
-                -88.0494963,36.0328773,0
-                -88.0447963,36.0342773,0
+                -88.01015125329509,36.0160773,0
+                -88.01057428212202,36.012166305007504,0
+                -88.01183051508596,36.00837414361879,0
+                -88.01388178218399,36.00481603873874,0
+                -88.01666575670332,36.001600101583634,0
+                -88.02009784898694,35.9988240467766,0
+                -88.02407377664754,35.996572223338184,0
+                -88.02847273313508,35.9949130517841,0
+                -88.03316105838265,35.99389694520243,0
+                -88.0379963,35.99355477747748,0
+                -88.04283154161736,35.99389694520243,0
+                -88.04751986686493,35.9949130517841,0
+                -88.05191882335247,35.996572223338184,0
                 -88.0379963,36.0160773,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0379963,36.0160773,0 -88.02184617291115,35.9934514110723,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR C</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector C Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.0379963,36.0160773,0 -88.0665763,36.0025773,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector C Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 240°–360°]]></description>
             <styleUrl>#sector-c</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.0379963,36.0160773,0
-                -88.0502963,36.0025773,0
-                -88.0557963,36.0050773,0
-                -88.0605963,36.0082773,0
-                -88.0644963,36.0122773,0
-                -88.0673963,36.0167773,0
-                -88.0691963,36.0216773,0
-                -88.0697963,36.0267773,0
-                -88.0691963,36.0318773,0
-                -88.0673963,36.0366773,0
-                -88.0644963,36.0408773,0
-                -88.0605963,36.0444773,0
-                -88.0559963,36.0471773,0
-                -88.0508963,36.0489773,0
-                -88.0454963,36.0497773,0
-                -88.0379963,36.0430773,0
+                -88.05191882335247,35.996572223338184,0
+                -88.05589475101307,35.9988240467766,0
+                -88.05932684329669,36.001600101583634,0
+                -88.06211081781602,36.00481603873874,0
+                -88.06416208491405,36.00837414361879,0
+                -88.06541831787798,36.012166305007504,0
+                -88.06584134670491,36.0160773,0
+                -88.06541831787798,36.019988294992494,0
+                -88.06416208491405,36.02378045638121,0
+                -88.06211081781602,36.02733856126126,0
+                -88.05932684329669,36.030554498416365,0
+                -88.05589475101307,36.0333305532234,0
+                -88.05191882335247,36.035582376661814,0
                 -88.0379963,36.0160773,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.0379963,36.0160773,0 -88.0702965541777,36.0160773,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
       </Folder>
@@ -1872,118 +1865,111 @@
           <name>SECTOR A</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector A Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.1039625,35.9287191,0 -88.1039625,35.9557191,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector A Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 0°–120°]]></description>
             <styleUrl>#sector-a</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.1039625,35.9287191,0
-                -88.1039625,35.9557191,0
-                -88.0988625,35.9545691,0
-                -88.0940625,35.9524691,0
-                -88.0897625,35.9495191,0
-                -88.0861625,35.9459191,0
-                -88.0834625,35.9418191,0
-                -88.0817625,35.9374191,0
-                -88.0810625,35.9330191,0
-                -88.0813625,35.9287191,0
-                -88.0826625,35.9246191,0
-                -88.0848625,35.9209191,0
-                -88.0878625,35.9177191,0
-                -88.0916625,35.9152191,0
+                -88.11786962480163,35.94822417666182,0
+                -88.1134755336358,35.9498833482159,0
+                -88.10879239375677,35.95089945479757,0
+                -88.1039625,35.951241622522524,0
+                -88.09913260624322,35.95089945479757,0
+                -88.09444946636418,35.9498833482159,0
+                -88.09005537519836,35.94822417666182,0
+                -88.08608384498228,35.945972353223404,0
+                -88.08265554865189,35.94319629841637,0
+                -88.07987465325635,35.93998036126126,0
+                -88.0778256548951,35.93642225638121,0
+                -88.07657081134647,35.9326300949925,0
+                -88.07614825039673,35.9287191,0
                 -88.1039625,35.9287191,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.1039625,35.9287191,0 -88.0878302352301,35.9513449889277,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR B</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector B Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.1039625,35.9287191,0 -88.0753825,35.9152191,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector B Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 120°–240°]]></description>
             <styleUrl>#sector-b</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.1039625,35.9287191,0
-                -88.0916625,35.9152191,0
-                -88.0959625,35.9133191,0
-                -88.1007625,35.9123191,0
-                -88.1039625,35.9017191,0
-                -88.1092625,35.9023191,0
-                -88.1142625,35.9038191,0
-                -88.1187625,35.9062191,0
-                -88.1226625,35.9095191,0
-                -88.1256625,35.9134191,0
-                -88.1277625,35.9177191,0
-                -88.1288625,35.9224191,0
-                -88.1289625,35.9272191,0
-                -88.1280625,35.9319191,0
-                -88.1261625,35.9363191,0
-                -88.1233625,35.9401191,0
-                -88.1197625,35.9432191,0
-                -88.1154625,35.9455191,0
-                -88.1107625,35.9469191,0
+                -88.07614825039673,35.9287191,0
+                -88.07657081134647,35.92480810500751,0
+                -88.0778256548951,35.92101594361879,0
+                -88.07987465325635,35.91745783873874,0
+                -88.08265554865189,35.91424190158364,0
+                -88.08608384498228,35.9114658467766,0
+                -88.09005537519836,35.90921402333819,0
+                -88.09444946636418,35.907554851784106,0
+                -88.09913260624322,35.90653874520243,0
+                -88.1039625,35.90619657747748,0
+                -88.10879239375677,35.90653874520243,0
+                -88.1134755336358,35.907554851784106,0
+                -88.11786962480163,35.90921402333819,0
                 -88.1039625,35.9287191,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.1039625,35.9287191,0 -88.0878302352301,35.9060932110723,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR C</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector C Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-88.1039625,35.9287191,0 -88.1325425,35.9152191,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector C Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 240°–360°]]></description>
             <styleUrl>#sector-c</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -88.1039625,35.9287191,0
-                -88.1162625,35.9152191,0
-                -88.1217625,35.9177191,0
-                -88.1265625,35.9209191,0
-                -88.1304625,35.9249191,0
-                -88.1333625,35.9294191,0
-                -88.1351625,35.9343191,0
-                -88.1357625,35.9394191,0
-                -88.1351625,35.9445191,0
-                -88.1333625,35.9493191,0
-                -88.1304625,35.9535191,0
-                -88.1265625,35.9571191,0
-                -88.1219625,35.9598191,0
-                -88.1168625,35.9616191,0
-                -88.1114625,35.9624191,0
-                -88.1039625,35.9557191,0
+                -88.11786962480163,35.90921402333819,0
+                -88.1218411550177,35.9114658467766,0
+                -88.1252694513481,35.91424190158364,0
+                -88.12805034674363,35.91745783873874,0
+                -88.1300993451049,35.92101594361879,0
+                -88.13135418865352,35.92480810500751,0
+                -88.13177674960326,35.9287191,0
+                -88.13135418865352,35.9326300949925,0
+                -88.1300993451049,35.93642225638121,0
+                -88.12805034674363,35.93998036126126,0
+                -88.1252694513481,35.94319629841637,0
+                -88.1218411550177,35.945972353223404,0
+                -88.11786962480163,35.94822417666182,0
                 -88.1039625,35.9287191,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-88.1039625,35.9287191,0 -88.1362270295398,35.9287191,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
       </Folder>
@@ -2005,118 +1991,111 @@
           <name>SECTOR A</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector A Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-87.9716572,35.8670476,0 -87.9716572,35.8940476,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector A Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 0°–120°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 0°–120°]]></description>
             <styleUrl>#sector-a</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -87.9716572,35.8670476,0
-                -87.9716572,35.8940476,0
-                -87.9665572,35.8928976,0
-                -87.9617572,35.8907976,0
-                -87.9574572,35.8878476,0
-                -87.9538572,35.8842476,0
-                -87.9511572,35.8801476,0
-                -87.9494572,35.8757476,0
-                -87.9487572,35.8713476,0
-                -87.9490572,35.8670476,0
-                -87.9503572,35.8629476,0
-                -87.9525572,35.8592476,0
-                -87.9555572,35.8560476,0
-                -87.9593572,35.8535476,0
+                -87.98555349395286,35.886552676661815,0
+                -87.9811628248989,35.888211848215896,0
+                -87.97648333224248,35.88922795479757,0
+                -87.9716572,35.88957012252252,0
+                -87.96683106775751,35.88922795479757,0
+                -87.96215157510109,35.888211848215896,0
+                -87.95776090604713,35.886552676661815,0
+                -87.95379246885307,35.8843008532234,0
+                -87.95036684247492,35.881524798416365,0
+                -87.94758811283673,35.87830886126126,0
+                -87.94554071023244,35.87475075638121,0
+                -87.94428684395416,35.870958594992494,0
+                -87.94386461209426,35.8670476,0
                 -87.9716572,35.8670476,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector A Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-87.9716572,35.8670476,0 -87.95553749901467,35.8896734889277,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR B</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector B Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-87.9716572,35.8670476,0 -87.9430772,35.8535476,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector B Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 120°–240°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 120°–240°]]></description>
             <styleUrl>#sector-b</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -87.9716572,35.8670476,0
-                -87.9593572,35.8535476,0
-                -87.9636572,35.8516476,0
-                -87.9684572,35.8506476,0
-                -87.9716572,35.8400476,0
-                -87.9769572,35.8406476,0
-                -87.9819572,35.8421476,0
-                -87.9864572,35.8445476,0
-                -87.9903572,35.8478476,0
-                -87.9933572,35.8517476,0
-                -87.9954572,35.8560476,0
-                -87.9965572,35.8607476,0
-                -87.9966572,35.8655476,0
-                -87.9957572,35.8702476,0
-                -87.9938572,35.8746476,0
-                -87.9910572,35.8784476,0
-                -87.9874572,35.8815476,0
-                -87.9831572,35.8838476,0
-                -87.9784572,35.8852476,0
+                -87.94386461209426,35.8670476,0
+                -87.94428684395416,35.863136605007504,0
+                -87.94554071023244,35.85934444361879,0
+                -87.94758811283673,35.85578633873874,0
+                -87.95036684247492,35.852570401583634,0
+                -87.95379246885307,35.8497943467766,0
+                -87.95776090604713,35.847542523338184,0
+                -87.96215157510109,35.8458833517841,0
+                -87.96683106775751,35.84486724520243,0
+                -87.9716572,35.84452507747748,0
+                -87.97648333224248,35.84486724520243,0
+                -87.9811628248989,35.8458833517841,0
+                -87.98555349395286,35.847542523338184,0
                 -87.9716572,35.8670476,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector B Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-87.9716572,35.8670476,0 -87.95553749901467,35.8444217110723,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
         <Folder>
           <name>SECTOR C</name>
           <visibility>1</visibility>
           <Placemark>
-            <name>Sector C Arm</name>
-            <styleUrl>#sector-arm</styleUrl>
-            <LineString>
-              <tessellate>1</tessellate>
-              <coordinates>-87.9716572,35.8670476,0 -88.0002372,35.8535476,0</coordinates>
-            </LineString>
-          </Placemark>
-          <Placemark>
             <name>Sector C Wedge</name>
-            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 3.0 km<br/><b>Bearing range:</b> 240°–360°]]></description>
+            <description><![CDATA[<b>Type:</b> Approx sector wedge<br/><b>Radius:</b> 2.5 km<br/><b>Bearing range:</b> 240°–360°]]></description>
             <styleUrl>#sector-c</styleUrl>
             <Polygon>
               <tessellate>1</tessellate>
               <outerBoundaryIs><LinearRing><coordinates>
                 -87.9716572,35.8670476,0
-                -87.9839572,35.8535476,0
-                -87.9894572,35.8560476,0
-                -87.9942572,35.8592476,0
-                -87.9981572,35.8632476,0
-                -88.0010572,35.8677476,0
-                -88.0028572,35.8726476,0
-                -88.0034572,35.8777476,0
-                -88.0028572,35.8828476,0
-                -88.0010572,35.8876476,0
-                -87.9981572,35.8918476,0
-                -87.9942572,35.8954476,0
-                -87.9896572,35.8981476,0
-                -87.9845572,35.8999476,0
-                -87.9791572,35.9007476,0
-                -87.9716572,35.8940476,0
+                -87.98555349395286,35.847542523338184,0
+                -87.98952193114692,35.8497943467766,0
+                -87.99294755752507,35.852570401583634,0
+                -87.99572628716327,35.85578633873874,0
+                -87.99777368976756,35.85934444361879,0
+                -87.99902755604583,35.863136605007504,0
+                -87.99944978790573,35.8670476,0
+                -87.99902755604583,35.870958594992494,0
+                -87.99777368976756,35.87475075638121,0
+                -87.99572628716327,35.87830886126126,0
+                -87.99294755752507,35.881524798416365,0
+                -87.98952193114692,35.8843008532234,0
+                -87.98555349395286,35.886552676661815,0
                 -87.9716572,35.8670476,0
               </coordinates></LinearRing></outerBoundaryIs>
             </Polygon>
+          </Placemark>
+          <Placemark>
+            <name>Sector C Arm</name>
+            <styleUrl>#sector-arm</styleUrl>
+            <LineString>
+              <tessellate>1</tessellate>
+              <coordinates>-87.9716572,35.8670476,0 -88.00389660197064,35.8670476,0</coordinates>
+            </LineString>
           </Placemark>
         </Folder>
       </Folder>

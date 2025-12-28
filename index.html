@@ -150,6 +150,9 @@
         // Initialize the map centered on Parsons, TN
         // Coordinates from KML: longitude -88.15, latitude 35.75
         var map = L.map('map', {
+            // More granular scroll wheel zoom
+            scrollWheelZoom: true,
+            wheelPxPerZoomLevel: 120, // Higher value = more granular zoom (default is 60)
             timeDimensionControl: true,
             timeDimensionControlOptions: {
                 position: 'bottomleft',
