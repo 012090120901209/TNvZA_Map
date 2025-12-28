@@ -165,22 +165,43 @@ async function parseKmlLocations(kmlUrl) {
 }
 
 // Define the timeline events with specific timestamps from the case
-// These are derived from the KML file analysis
+// Comprehensive cell phone timeline data from court documents and post-conviction filings
 function getTimelineEvents() {
     
     const events = [
-        { time: '6:00', label: 'Timeline Start', lat: 35.6792874, lng: -88.1758007 },
-        { time: '7:45', label: 'Abduction - Screaming heard', lat: 35.6785775930745, lng: -88.17477273224679 },
-        { time: '7:50', label: 'Holly Bobo seen walking into woods', lat: 35.6792874, lng: -88.1758007 },
-        { time: '8:00', label: 'Cell phone departs Bobo Residence', lat: 35.67957104790676, lng: -88.17468256470195 },
-        { time: '8:11', label: 'Cell phone reading CR 1253 Section 1', lat: 35.76346036385862, lng: -88.19034415007265 },
-        { time: '8:26', label: 'Cell phone in Shiloh Tower Section 1 (start)', lat: 35.80728968907157, lng: -88.1216288597432 },
-        { time: '8:56', label: 'Cell phone in Shiloh Tower Section 1 (end)', lat: 35.80728968907157, lng: -88.1216288597432 },
-        { time: '8:57', label: 'Cell Tower Ping 3', lat: 35.8557506982597, lng: -88.1594313038225 },
-        { time: '9:02', label: 'Cell Tower Ping 2 / Cell reading CR 3152 Sec 3', lat: 35.842345623928, lng: -88.1276129764545 },
-        { time: '9:06', label: 'Cell phone reading CR 3152 Section 3', lat: 35.82094274393113, lng: -88.13629720440629 },
-        { time: '9:10', label: 'Cell Tower Ping 1 / Cell reading CR 3152 Sec 2', lat: 35.8285377036733, lng: -88.0218543180404 },
-        { time: '9:25', label: 'Cell phone at Creek Gooch Road - Lunchbox location', lat: 35.75837617082156, lng: -88.17459209850702 },
+        // Timeline start
+        { time: '6:00', label: 'Timeline Start', lat: 35.6792874, lng: -88.1758007, phone: 'timeline' },
+        
+        // Abduction events
+        { time: '7:45', label: 'Abduction - Screaming heard at Bobo Residence', lat: 35.6785775930745, lng: -88.17477273224679, phone: 'event' },
+        { time: '7:50', label: 'Holly Bobo seen walking into woods', lat: 35.6792874, lng: -88.1758007, phone: 'event' },
+        
+        // HOLLY BOBO'S CELL PHONE - Source: Cell phone tracking exhibit
+        { time: '8:00', label: '[Holly] Cell phone departs Bobo Residence', lat: 35.67957104790676, lng: -88.17468256470195, phone: 'holly' },
+        { time: '8:11', label: '[Holly] CR 1253 Sector 1 - Henderson County area', lat: 35.76346036385862, lng: -88.19034415007265, phone: 'holly' },
+        { time: '8:16', label: '[Holly] CR 1096 Sector 2 - Moving northward', lat: 35.78, lng: -88.15, phone: 'holly' },
+        { time: '8:26', label: '[Holly] CR 1096 Shiloh Road Tower Sector 1 (start) - Natchez Trace area', lat: 35.80728968907157, lng: -88.1216288597432, phone: 'holly' },
+        { time: '8:30', label: '[Holly] Phone pings near remains site - undermines State theory', lat: 35.8215758, lng: -88.16926100000001, phone: 'holly' },
+        { time: '8:56', label: '[Holly] CR 1096 Shiloh Road Tower Sector 1 (end) - 30 min in area', lat: 35.80728968907157, lng: -88.1216288597432, phone: 'holly' },
+        { time: '9:00', label: '[Holly] Exit route: CR 1096 Sec 1 → CR 3152 Sec 3', lat: 35.83, lng: -88.13, phone: 'holly' },
+        { time: '9:02', label: '[Holly] CR 3152 Sector 3 - Benton County', lat: 35.842345623928, lng: -88.1276129764545, phone: 'holly' },
+        { time: '9:06', label: '[Holly] CR 3152 Sector 3 - Continuing in area', lat: 35.82094274393113, lng: -88.13629720440629, phone: 'holly' },
+        { time: '9:10', label: '[Holly] CR 3152 Sector 2 - Near marker 17', lat: 35.8285377036733, lng: -88.0218543180404, phone: 'holly' },
+        { time: '9:25', label: '[Holly] CR 1257 Sector 3 - Creek Gooch Road (lunchbox/notebook found)', lat: 35.75837617082156, lng: -88.17459209850702, phone: 'holly' },
+        
+        // ZACHARY ADAMS & JASON AUTRY CELL PHONES - Source: Reeves Affidavit
+        { time: '9:42', label: '[Adams/Autry] Birdsong Tower East Sector 39077 - First recorded use', lat: 35.8680952, lng: -87.9434109, phone: 'adams' },
+        { time: '9:50', label: '[Adams/Autry] Birdsong Tower East Sector 39077 - NE of dividing line', lat: 35.8680952, lng: -87.9434109, phone: 'adams' },
+        { time: '10:32', label: '[Adams/Autry] Birdsong Tower East Sector 39077 - Last east sector use', lat: 35.8680952, lng: -87.9434109, phone: 'adams' },
+        { time: '10:35', label: '[Adams/Autry] Birdsong Tower West Sector 39079 - Bypassed south 39078!', lat: 35.8680952, lng: -87.9434109, phone: 'adams' },
+        { time: '10:37', label: '[Adams/Autry] Birdsong Tower West Sector 39079 - Last west sector use', lat: 35.8680952, lng: -87.9434109, phone: 'adams' },
+        { time: '10:38', label: '[Adams] Home tower - Only possible via I-40, not backroads', lat: 35.8214583, lng: -88.0837789, phone: 'adams' },
+        
+        // ATM VIDEO EVIDENCE - Source: Post-Conviction Filing
+        { time: '11:12', label: '[Adams] ATM Video - Adams, Dylan Adams, Shayne Austin at CB&S Bank', lat: 35.6492403, lng: -88.1279471, phone: 'evidence' },
+        
+        // Continued activity
+        { time: '12:35', label: '[Adams] Cell phone still in Parsons area', lat: 35.6492403, lng: -88.1279471, phone: 'adams' },
     ];
     
     return events.map(event => {
@@ -375,11 +396,32 @@ L.TimeDimension.Layer.KmlLocations = L.TimeDimension.Layer.extend({
         
         const currentEvent = this._timelineEvents[currentEventIndex];
         
+        // Get color based on phone type
+        const getPhoneColor = (phone) => {
+            switch(phone) {
+                case 'holly': return '#e91e63'; // Pink for Holly Bobo's phone
+                case 'adams': return '#2196f3'; // Blue for Adams/Autry phones
+                case 'evidence': return '#4caf50'; // Green for evidence (ATM video)
+                case 'event': return '#ff5722'; // Orange for events
+                case 'timeline': return '#9e9e9e'; // Gray for timeline markers
+                default: return '#ff0000'; // Red default
+            }
+        };
+        
         // Add a prominent marker for current event
         if (currentEvent) {
+            const phoneColor = getPhoneColor(currentEvent.phone);
+            // Convert hex to rgba for proper transparency
+            const hexToRgba = (hex, alpha) => {
+                const r = parseInt(hex.slice(1, 3), 16);
+                const g = parseInt(hex.slice(3, 5), 16);
+                const b = parseInt(hex.slice(5, 7), 16);
+                return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+            };
+            
             const pulsingIcon = L.divIcon({
                 className: 'pulsing-marker',
-                html: `<div class="pulse-ring"></div><div class="pulse-core"></div>`,
+                html: `<div class="pulse-ring" style="background: ${hexToRgba(phoneColor, 0.4)};"></div><div class="pulse-core" style="background: ${phoneColor};"></div>`,
                 iconSize: [30, 30],
                 iconAnchor: [15, 15]
             });
