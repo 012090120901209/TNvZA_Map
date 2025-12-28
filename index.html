@@ -165,8 +165,8 @@
             },
             timeDimension: true,
             timeDimensionOptions: {
-                // ISO 8601 duration format: PT = Period Time, H = hours, M = minutes
-                timeInterval: 'PT6H35M', // 6 hours 35 min span (6:00 AM - 12:35 PM)
+                // ISO 8601 time interval format: start/end dates
+                timeInterval: '2011-04-13T06:00:00Z/2011-04-13T12:35:00Z', // 6:00 AM - 12:35 PM on April 13, 2011
                 period: 'PT5M', // 5 minute intervals between time steps
             },
         }).setView([35.78, -88.05], 10); // Centered to show both Parsons and Birdsong tower area
