@@ -46,14 +46,76 @@
             margin: 5px 0;
             font-size: 14px;
         }
+        
+        /* Pulsing marker animation for current timeline position */
+        .pulsing-marker {
+            position: relative;
+        }
+        
+        .pulse-ring {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: rgba(255, 0, 0, 0.4);
+            animation: pulse-ring 1.5s ease-out infinite;
+        }
+        
+        .pulse-core {
+            position: absolute;
+            width: 14px;
+            height: 14px;
+            left: 8px;
+            top: 8px;
+            border-radius: 50%;
+            background: #ff0000;
+            border: 2px solid #fff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+        }
+        
+        @keyframes pulse-ring {
+            0% {
+                transform: scale(0.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+        
+        /* Legend styles */
+        .legend {
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+            line-height: 1.5;
+            font-size: 12px;
+        }
+        
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin: 3px 0;
+        }
+        
+        .legend-color {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 8px;
+            border: 1px solid #333;
+        }
     </style>
 </head>
 <body>
     <div class="info-panel">
         <h2>TN v. Zachary Adams</h2>
+        <p><strong>Date:</strong> April 13, 2011</p>
         <p><strong>Location:</strong> Parsons, TN</p>
-        <p><strong>Coordinates:</strong> 35.75°N, 88.15°W</p>
-        <p>Rain radar animation shows weather patterns over the area.</p>
+        <p><strong>Timeline:</strong> Starts at 6:00 AM</p>
+        <p>Use the timeline controls to animate through the events of April 13, 2011.</p>
     </div>
     
     <div id="map"></div>
@@ -71,8 +133,14 @@
     
     <!-- Rainviewer JS -->
     <script type="text/javascript" src="./Rainviewer.js"></script>
+    
+    <!-- KML Location Loader -->
+    <script type="text/javascript" src="./KmlLoader.js"></script>
 
     <script>
+        // Timeline start: 6:00 AM on April 13, 2011
+        const timelineStart = new Date(2011, 3, 13, 6, 0, 0, 0); // Month is 0-indexed (3 = April)
+        
         // Initialize the map centered on Parsons, TN
         // Coordinates from KML: longitude -88.15, latitude 35.75
         var map = L.map('map', {
@@ -80,13 +148,22 @@
             timeDimensionControlOptions: {
                 position: 'bottomleft',
                 playerOptions: {
-                    transitionTime: 1000,
+                    transitionTime: 2000,
                     loop: true,
                 },
                 timeZones: ['Local'],
+                speedSlider: true,
+                minSpeed: 0.5,
+                maxSpeed: 10,
+                speedStep: 0.5,
             },
             timeDimension: true,
-        }).setView([35.75, -88.15], 10); // Centered on Parsons, TN with appropriate zoom
+            timeDimensionOptions: {
+                // ISO 8601 duration format: PT = Period Time, 4H = 4 hours, 5M = 5 minutes
+                timeInterval: 'PT4H', // 4 hour span for the timeline
+                period: 'PT5M', // 5 minute intervals between time steps
+            },
+        }).setView([35.75, -88.15], 11); // Centered on Parsons, TN with appropriate zoom
 
         // Add OpenStreetMap base layer
         let osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -94,22 +171,59 @@
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
 
-        // Add Rainviewer radar layer with time dimension
+        // Add legend control
+        let legend = L.control({position: 'bottomright'});
+        legend.onAdd = function(map) {
+            let div = L.DomUtil.create('div', 'legend');
+            div.innerHTML = `
+                <strong>Legend</strong><br>
+                <div class="legend-item"><div class="legend-color" style="background:#ef5350"></div>Abduction/Residence</div>
+                <div class="legend-item"><div class="legend-color" style="background:#fbc235"></div>Cell Tower/Phone</div>
+                <div class="legend-item"><div class="legend-color" style="background:#d32f2f"></div>Body Discovery</div>
+                <div class="legend-item"><div class="legend-color" style="background:#1976d2"></div>Other Locations</div>
+                <div class="legend-item"><div class="legend-color" style="background:#ff0000"></div>Current Event</div>
+                <div class="legend-item"><div style="width:20px;height:3px;background:#ff5500;margin-right:8px"></div>GPS Trail</div>
+            `;
+            return div;
+        };
+        legend.addTo(map);
+
+        // Load KML locations and create timeline layer
+        async function initializeKmlLayer() {
+            try {
+                // Parse KML locations
+                const locations = await parseKmlLocations('./locations.kml');
+                console.log('Parsed ' + locations.length + ' locations from KML');
+                
+                // Get timeline events
+                const timelineEvents = getTimelineEvents();
+                console.log('Created ' + timelineEvents.length + ' timeline events');
+                
+                // Create KML locations layer with timeline
+                const kmlLayer = L.timeDimension.layer.kmlLocations(locations, timelineEvents, {});
+                kmlLayer.addTo(map);
+                
+                // Update layer control with KML layer
+                overlayMaps["KML Locations"] = kmlLayer;
+                
+                console.log('KML locations layer added to map');
+            } catch (error) {
+                console.error('Error loading KML locations:', error);
+            }
+        }
+
+        // Add Rainviewer radar layer with time dimension (for weather context)
+        // Note: This shows current weather, not historical weather from 2011
         let rainviewer_layer = L.timeDimension.layer.rainviewer(
             "https://api.rainviewer.com/public/weather-maps.json", 
-            {opacity: 0.7}
+            {opacity: 0.5}
         );
-        rainviewer_layer.addTo(map);
 
         // Add Rainviewer satellite layer (optional)
         let rainviewer_satellite_layer = L.timeDimension.layer.rainviewer(
             "https://api.rainviewer.com/public/weather-maps.json", 
-            {type: 'satellite', opacity: 0.7}
+            {type: 'satellite', opacity: 0.5}
         );
-
-        // Add a marker for Parsons, TN
-        let marker = L.marker([35.75, -88.15]).addTo(map);
-        marker.bindPopup("<b>Parsons, Tennessee</b><br>Case Location").openPopup();
 
         // Layer control for switching between base maps and overlays
         let baseMaps = {
@@ -117,11 +231,14 @@
         };
 
         let overlayMaps = {
-            "Radar": rainviewer_layer, 
-            "Satellite": rainviewer_satellite_layer,
+            "Radar (Current)": rainviewer_layer, 
+            "Satellite (Current)": rainviewer_satellite_layer,
         };
 
         let layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
+        
+        // Initialize KML layer
+        initializeKmlLayer();
     </script>
 </body>
 </html>
